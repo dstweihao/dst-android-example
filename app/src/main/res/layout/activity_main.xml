@@ -1,151 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     tools:context="com.wh.customcontrol.MainActivity">
 
 
 
-   <!--三级菜单-->
 
-   <RelativeLayout
-       android:id="@+id/ll_level3"
-       android:layout_width="240dp"
-       android:background="@drawable/level3"
-       android:layout_centerHorizontal="true"
-       android:layout_alignParentBottom="true"
-       android:layout_height="120dp">
+    <Button
+        android:id="@+id/button_3menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-      <!--左边-->
-
-      <ImageView
-          android:id="@+id/channel1"
-          android:layout_alignParentBottom="true"
-          android:layout_width="wrap_content"
-          android:layout_marginBottom="5dp"
-          android:src="@drawable/channel1"
-          android:layout_marginLeft="10dp"
-          android:layout_height="wrap_content"/>
-
-      <ImageView
-          android:id="@+id/channel2"
-          android:layout_marginLeft="25dp"
-          android:layout_above="@+id/channel1"
-          android:layout_width="wrap_content"
-          android:src="@drawable/channel2"
-          android:layout_height="wrap_content"/>
-
-
-      <ImageView
-          android:layout_marginLeft="45dp"
-          android:layout_above="@+id/channel2"
-          android:layout_width="wrap_content"
-          android:src="@drawable/channel3"
-          android:layout_height="wrap_content"/>
-
-      <!--中间-->
-      <ImageView
-          android:layout_marginTop="5dp"
-          android:layout_width="wrap_content"
-          android:src="@drawable/channel4"
-          android:layout_centerHorizontal="true"
-          android:layout_height="wrap_content"/>
-
-      <!--右边-->
-      <ImageView
-
-          android:id="@+id/channel7"
-          android:layout_alignParentRight="true"
-          android:layout_alignParentBottom="true"
-          android:layout_width="wrap_content"
-
-          android:src="@drawable/channel7"
-          android:layout_marginRight="10dp"
-          android:layout_height="wrap_content"/>
-
-      <ImageView
-          android:id="@+id/channel6"
-          android:layout_alignParentRight="true"
-          android:layout_marginRight="20dp"
-          android:layout_above="@+id/channel7"
-          android:layout_width="wrap_content"
-          android:src="@drawable/channel6"
-          android:layout_height="wrap_content"/>
-
-
-      <ImageView
-          android:layout_alignParentRight="true"
-          android:layout_marginRight="45dp"
-          android:layout_above="@+id/channel6"
-          android:layout_width="wrap_content"
-          android:src="@drawable/channel5"
-          android:layout_height="wrap_content"/>
+        android:text="三级菜单" />
 
 
 
-   </RelativeLayout>
+    <Button
+        android:id="@+id/button_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="手势滑动View方块"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_framlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="手势滑动显示底层FramLayout"
+        android:textAllCaps="false" />
 
 
-   <!--二级菜单-->
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-   <RelativeLayout
-       android:id="@+id/iv_level2"
-       android:layout_width="150dp"
-       android:background="@drawable/level2"
-       android:layout_centerHorizontal="true"
-       android:layout_alignParentBottom="true"
-       android:layout_height="75dp">
+        android:text="View的测量和绘制"
+        android:textAllCaps="false" />
 
-      <ImageView
-          android:layout_width="wrap_content"
-          android:src="@drawable/icon_search"
-          android:layout_marginLeft="5dp"
-          android:layout_alignParentBottom="true"
-          android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-      <ImageView
-          android:id="@+id/iv_menu"
-          android:layout_centerHorizontal="true"
-          android:layout_width="wrap_content"
-          android:src="@drawable/icon_menu"
-          android:layout_height="wrap_content"/>
+        android:text="自定义TextView边框填色"
+        android:textAllCaps="false" />
 
-      <ImageView
-          android:layout_marginRight="5dp"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentRight="true"
-          android:layout_width="wrap_content"
-          android:src="@drawable/icon_myyouku"
-          android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_text_shine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:text="自定义TextView文字变色闪烁"
+        android:textAllCaps="false" />
 
-
-   </RelativeLayout>
-
-
-   <!--一级菜单-->
-
-   <RelativeLayout
-       android:id="@+id/iv_level1"
-       android:layout_width="80dp"
-       android:background="@drawable/level1"
-       android:layout_centerHorizontal="true"
-       android:layout_alignParentBottom="true"
-       android:layout_height="40dp">
-
-      <ImageView
-          android:id="@+id/iv_home"
-          android:layout_centerInParent="true"
-          android:layout_width="wrap_content"
-          android:src="@drawable/icon_home"
-          android:layout_height="wrap_content"/>
-
-
-
-</RelativeLayout>
-
-
-
-    </RelativeLayout>
+</LinearLayout>
