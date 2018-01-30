@@ -1,6 +1,7 @@
 # CustomControl
 CustomControl 是一个自定义控件的示例Demo，里面包含有：
-  * 三级菜单的隐藏和显示。
+  * 三级菜单
+  
   * 广告条
   * 滑动开关
   * 三级联动
