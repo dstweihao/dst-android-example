@@ -60,4 +60,12 @@
         android:text="自定义TextView文字变色闪烁"
         android:textAllCaps="false" />
 
+
+    <Button
+        android:id="@+id/button_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TopBar"
+        android:textAllCaps="false" />
+
 </LinearLayout>

@@ -5,13 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-
 import com.wh.customcontrol.ui.activity.classroom.Level3MenuActivity;
 import com.wh.customcontrol.ui.activity.herobook.ColorTextActivity;
 import com.wh.customcontrol.ui.activity.herobook.DragFramLayoutActivity;
 import com.wh.customcontrol.ui.activity.herobook.DragSquareActivity;
 import com.wh.customcontrol.ui.activity.herobook.MeasureActivity;
 import com.wh.customcontrol.ui.activity.herobook.ShineTextViewActivity;
+import com.wh.customcontrol.ui.activity.herobook.TopBarActivity;
 import com.wh.customcontrol.utils.GoToActivity;
 
 import butterknife.BindView;
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonTextColor;
     @BindView(R.id.button_text_shine)
     Button mButtonTextShine;
+    @BindView(R.id.button_topbar)
+    Button mButtonTopbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.button_3menu, R.id.button_square, R.id.button_framlayout, R.id.button_view, R.id.button_text_color, R.id.button_text_shine})
+    @OnClick({R.id.button_3menu, R.id.button_square, R.id.button_framlayout, R.id.button_view, R.id.button_text_color, R.id.button_text_shine,R.id.button_topbar})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_3menu:
@@ -63,11 +65,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_text_shine:
                 GoToActivity.goToActivity(this, ShineTextViewActivity.class);
                 break;
-
+            case R.id.button_topbar:
+                GoToActivity.goToActivity(this, TopBarActivity.class);
             default:
                 break;
 
 
         }
     }
+
+
 }

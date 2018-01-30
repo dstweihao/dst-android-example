@@ -16,13 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.classroom.Level3MenuActivity"></activity>
-        <activity android:name=".ui.activity.herobook.ColorTextActivity"/>
-        <activity android:name=".ui.activity.herobook.DragFramLayoutActivity"/>
-        <activity android:name=".ui.activity.herobook.DragSquareActivity"/>
-        <activity android:name=".ui.activity.herobook.MeasureActivity"/>
-        <activity android:name=".ui.activity.herobook.ShineTextViewActivity"/>
-
+        <activity android:name=".ui.activity.classroom.Level3MenuActivity" />
+        <activity android:name=".ui.activity.herobook.ColorTextActivity" />
+        <activity android:name=".ui.activity.herobook.DragFramLayoutActivity" />
+        <activity android:name=".ui.activity.herobook.DragSquareActivity" />
+        <activity android:name=".ui.activity.herobook.MeasureActivity" />
+        <activity android:name=".ui.activity.herobook.ShineTextViewActivity" />
+        <activity android:name=".ui.activity.herobook.TopBarActivity"></activity>
     </application>
 
 </manifest>
