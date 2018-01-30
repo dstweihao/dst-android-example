@@ -10,7 +10,12 @@ CustomControl 是一个自定义控件的示例Demo，里面包含有：
   * 新闻菜单和主界面
   
   * 手势滑动View方块
+    ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/2.png)
   * 手势滑动显示底层FramLayout
+   ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/3.png)
   * View的测量和绘制
+   ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/4.png)
   * 自定义TextView边框填色
+   ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/5.png)
   * 自定义TextView文字变色闪烁
+   ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/6.png)
