@@ -1,7 +1,7 @@
 # CustomControl
 CustomControl 是一个自定义控件的示例Demo，里面包含有：
   * 三级菜单
-  
+  ![](https://github.com/jweihao/CustomControl/imgs/1.png)
   * 广告条
   * 滑动开关
   * 三级联动
