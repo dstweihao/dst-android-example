@@ -22,7 +22,7 @@
         <activity android:name=".ui.activity.herobook.DragSquareActivity" />
         <activity android:name=".ui.activity.herobook.MeasureActivity" />
         <activity android:name=".ui.activity.herobook.ShineTextViewActivity" />
-        <activity android:name=".ui.activity.herobook.TopBarActivity"></activity>
+        <activity android:name=".ui.activity.herobook.JToolBarActivity"></activity>
     </application>
 
 </manifest>

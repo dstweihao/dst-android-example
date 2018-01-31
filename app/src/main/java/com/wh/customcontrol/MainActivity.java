@@ -11,7 +11,7 @@ import com.wh.customcontrol.ui.activity.herobook.DragFramLayoutActivity;
 import com.wh.customcontrol.ui.activity.herobook.DragSquareActivity;
 import com.wh.customcontrol.ui.activity.herobook.MeasureActivity;
 import com.wh.customcontrol.ui.activity.herobook.ShineTextViewActivity;
-import com.wh.customcontrol.ui.activity.herobook.TopBarActivity;
+import com.wh.customcontrol.ui.activity.herobook.JToolBarActivity;
 import com.wh.customcontrol.utils.GoToActivity;
 
 import butterknife.BindView;
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 GoToActivity.goToActivity(this, ShineTextViewActivity.class);
                 break;
             case R.id.button_topbar:
-                GoToActivity.goToActivity(this, TopBarActivity.class);
+                GoToActivity.goToActivity(this, JToolBarActivity.class);
             default:
                 break;
 
