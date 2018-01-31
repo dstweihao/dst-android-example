@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity">
+    android:layout_height="match_parent"
+    tools:context="com.jweihao.jdemo.ui.activity.custom.VolumeActivity">
 
-    <com.jweihao.jdemo.view.CircleProgressView
-        android:id="@+id/circleprogress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.jweihao.jdemo.view.VolumeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

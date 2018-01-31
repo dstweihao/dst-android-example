@@ -24,7 +24,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.ShineTextViewActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.CustomActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.VolumeActivity"></activity>
     </application>
 
 </manifest>
