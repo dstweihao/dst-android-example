@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.wh.customcontrol.ui.activity.herobook.JToolBarActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity">
 
-    <com.wh.jtoolbar.JToolBar
+    <com.jweihao.JToolBar
         android:id="@+id/jtoolbar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        app:leftBackground="@mipmap/ic_launcher_round"
+        android:layout_height="wrap_content"
+        android:background="#448AFF"
+        app:leftBackground="#EE1"
         app:leftText="左按钮"
-        app:leftTextColor="#ffffff"
+        app:leftTextColor="@color/colorPrimaryDark"
         app:rightBackground="#F43"
         app:rightText="右按钮"
         app:rightTextColor="#ffff"
         app:title="自定义标题"
-        app:titleTextColor="@color/colorPrimaryDark"
-        app:titleTextSize="15dp" />
-
+        app:titleTextColor="#ffff"
+        app:titleTextSize="10dp" />
+    
 </LinearLayout>

@@ -1,11 +1,13 @@
-package com.wh.customcontrol.ui.activity.herobook;
+package com.jweihao.jdemo.ui.activity.custom;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+
+import com.jweihao.JToolBar;
 import com.wh.customcontrol.R;
-import com.wh.jtoolbar.JToolBar;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,7 +35,7 @@ public class JToolBarActivity extends AppCompatActivity {
 
             }
         });
-        mJToolBar.setButtonVisable(JToolBar.LEFT_BUTTON, false);
+        mJToolBar.setButtonVisable(JToolBar.LEFT_BUTTON, true);
         mJToolBar.setButtonVisable(JToolBar.RIGHT_BUTTON,true);
 
     }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.custom.CustomActivity">
+
+
+    <Button
+        android:id="@+id/button_3menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三级菜单" />
+
+    <Button
+        android:id="@+id/button_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手势滑动View方块"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_framlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手势滑动显示底层FramLayout"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View的测量和绘制"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义TextView边框填色"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_text_shine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义TextView文字变色闪烁"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/button_jtoolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义TooBar"
+        android:textAllCaps="false" />
+
+</LinearLayout>

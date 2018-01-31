@@ -1,4 +1,4 @@
-package com.wh.customcontrol;
+package com.jweihao.customcontrol;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

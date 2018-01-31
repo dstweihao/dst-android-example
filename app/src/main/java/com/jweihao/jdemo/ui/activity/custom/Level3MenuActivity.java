@@ -1,4 +1,4 @@
-package com.wh.customcontrol.ui.activity.classroom;
+package com.jweihao.jdemo.ui.activity.custom;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,8 +6,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+
+import com.jweihao.jdemo.utils.AnimTools;
 import com.wh.customcontrol.R;
-import com.wh.customcontrol.utils.AnimTools;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

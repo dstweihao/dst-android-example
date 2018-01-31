@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.wh.customcontrol.ui.activity.herobook.ColorTextActivity">
+    tools:context="com.wh.customcontrol.com.jweihao.customcontrol.ui.activity.herobook.ColorTextActivity">
 
-    <com.wh.customcontrol.view.ColorTextView
+    <com.jweihao.jdemo.view.ColorTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"

@@ -1,9 +1,10 @@
-package com.wh.customcontrol.ui.activity.herobook;
+package com.jweihao.jdemo.ui.activity.custom;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wh.customcontrol.R;
+
 
 public class DragSquareActivity extends AppCompatActivity {
 

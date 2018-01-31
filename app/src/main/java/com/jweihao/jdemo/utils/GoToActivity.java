@@ -1,4 +1,4 @@
-package com.wh.customcontrol.utils;
+package com.jweihao.jdemo.utils;
 
 import android.content.Context;
 import android.content.Intent;

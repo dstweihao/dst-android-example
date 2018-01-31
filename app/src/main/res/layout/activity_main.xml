@@ -3,69 +3,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
-    tools:context="com.wh.customcontrol.MainActivity">
+    tools:context="com.jweihao.jdemo.MainActivity">
 
-
+    <Button
+        android:id="@+id/button_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义控件" />
 
 
     <Button
-        android:id="@+id/button_3menu"
+        android:id="@+id/button_http"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="三级菜单" />
-
-
-
-    <Button
-        android:id="@+id/button_square"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="手势滑动View方块"
+        android:text="网络框架"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/button_framlayout"
+        android:id="@+id/button_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="手势滑动显示底层FramLayout"
+        android:text="布局框架"
         android:textAllCaps="false" />
 
 
-    <Button
-        android:id="@+id/button_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!--<Button-->
+        <!--android:id="@+id/button_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
 
-        android:text="View的测量和绘制"
-        android:textAllCaps="false" />
+        <!--android:text="View的测量和绘制"-->
+        <!--android:textAllCaps="false" />-->
 
-    <Button
-        android:id="@+id/button_text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!--<Button-->
+        <!--android:id="@+id/button_text_color"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
 
-        android:text="自定义TextView边框填色"
-        android:textAllCaps="false" />
+        <!--android:text="自定义TextView边框填色"-->
+        <!--android:textAllCaps="false" />-->
 
-    <Button
-        android:id="@+id/button_text_shine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!--<Button-->
+        <!--android:id="@+id/button_text_shine"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
 
-        android:text="自定义TextView文字变色闪烁"
-        android:textAllCaps="false" />
+        <!--android:text="自定义TextView文字变色闪烁"-->
+        <!--android:textAllCaps="false" />-->
 
 
-    <Button
-        android:id="@+id/button_topbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TopBar"
-        android:textAllCaps="false" />
+    <!--<Button-->
+        <!--android:id="@+id/button_topbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TopBar"-->
+        <!--android:textAllCaps="false" />-->
 
 </LinearLayout>

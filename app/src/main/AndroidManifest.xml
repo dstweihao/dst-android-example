@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.jweihao.jdemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.classroom.Level3MenuActivity" />
-        <activity android:name=".ui.activity.herobook.ColorTextActivity" />
-        <activity android:name=".ui.activity.herobook.DragFramLayoutActivity" />
-        <activity android:name=".ui.activity.herobook.DragSquareActivity" />
-        <activity android:name=".ui.activity.herobook.MeasureActivity" />
-        <activity android:name=".ui.activity.herobook.ShineTextViewActivity" />
-        <activity android:name=".ui.activity.herobook.JToolBarActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.Level3MenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ColorTextActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragFramLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragSquareActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.MeasureActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ShineTextViewActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CustomActivity"></activity>
     </application>
 
 </manifest>

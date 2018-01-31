@@ -1,4 +1,4 @@
-package com.wh.customcontrol.view;
+package com.jweihao.jdemo.view;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

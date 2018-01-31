@@ -1,4 +1,4 @@
-package com.wh.customcontrol;
+package com.jweihao.customcontrol;
 
 import org.junit.Test;
 

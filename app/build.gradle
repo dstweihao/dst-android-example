@@ -29,5 +29,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
     //JToolBar
-    compile 'com.github.jweihao:JToolBar:v1.0.0'
+    compile 'com.github.jweihao:JToolBar:v1.0.1'
 }

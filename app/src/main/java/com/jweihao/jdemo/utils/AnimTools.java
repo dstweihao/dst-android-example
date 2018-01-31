@@ -1,4 +1,4 @@
-package com.wh.customcontrol.utils;
+package com.jweihao.jdemo.utils;
 /*
  * @author weihao
  * @time 2017/10/28 0028 19:14
