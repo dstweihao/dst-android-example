@@ -63,11 +63,19 @@
         android:layout_height="wrap_content"
         android:text="弧形展示图"
         android:textAllCaps="false" />
+
     <Button
         android:id="@+id/button_volume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="音频条形图"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回弹ScrillView"
         android:textAllCaps="false" />
 
 

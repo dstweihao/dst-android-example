@@ -32,6 +32,8 @@ public class CustomActivity extends AppCompatActivity {
     Button mButtonCircle;
     @BindView(R.id.button_volume)
     Button mButtonVolume;
+    @BindView(R.id.button_scroll)
+    Button mButtonScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class CustomActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_3menu, R.id.button_square, R.id.button_framlayout, R.id.button_view, R.id.button_text_color, R.id.button_text_shine, R.id.button_jtoolbar, R.id.button_circle,R.id.button_volume})
+    @OnClick({R.id.button_3menu, R.id.button_square, R.id.button_framlayout, R.id.button_view, R.id.button_text_color, R.id.button_text_shine, R.id.button_jtoolbar, R.id.button_circle, R.id.button_volume,R.id.button_scroll})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_3menu:
@@ -71,9 +73,14 @@ public class CustomActivity extends AppCompatActivity {
             case R.id.button_volume:
                 GoToActivity.goToActivity(this, VolumeActivity.class);
                 break;
+            case R.id.button_scroll:
+                GoToActivity.goToActivity(this, ReboundScrollActivity.class);
+                break;
             default:
                 break;
 
         }
     }
+
+
 }

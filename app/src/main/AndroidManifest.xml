@@ -25,7 +25,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.CustomActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.VolumeActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.VolumeActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ReboundScrollActivity"></activity>
     </application>
 
 </manifest>
