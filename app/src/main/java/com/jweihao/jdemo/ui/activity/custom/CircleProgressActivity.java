@@ -3,6 +3,8 @@ package com.jweihao.jdemo.ui.activity.custom;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.wh.customcontrol.R;
+
 public class CircleProgressActivity extends AppCompatActivity {
 
     @Override
