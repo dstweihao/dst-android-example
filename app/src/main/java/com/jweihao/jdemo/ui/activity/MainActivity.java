@@ -1,4 +1,4 @@
-package com.jweihao.jdemo;
+package com.jweihao.jdemo.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
+import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.utils.GoToActivity;
 import com.wh.customcontrol.R;
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_http:
                 break;
             case R.id.button_layout:
+                GoToActivity.goToActivity(this, LayoutActivity.class);
                 break;
             default:
                 break;

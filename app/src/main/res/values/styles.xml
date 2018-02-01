@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TabLayoutActivity" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <!--设置TabLayout字体大小-->
+    <style name="TabLayoutTextStyle" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">@dimen/text_16_sp</item>
+    </style>
+
+    <dimen name="text_16_sp">16sp</dimen>
+
 </resources>

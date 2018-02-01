@@ -11,92 +11,90 @@
         android:layout_height="wrap_content">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_3menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="三级菜单" />
+
+            <Button
+                android:id="@+id/button_square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手势滑动View方块"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_framlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手势滑动显示底层FramLayout"
+                android:textAllCaps="false" />
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View的测量和绘制"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_3menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="三级菜单" />
+            <Button
+                android:id="@+id/button_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义TextView边框填色"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_square"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="手势滑动View方块"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/button_framlayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="手势滑动显示底层FramLayout"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_text_shine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义TextView文字变色闪烁"
+                android:textAllCaps="false" />
 
 
-    <Button
-        android:id="@+id/button_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View的测量和绘制"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_jtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义TooBar"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="自定义TextView边框填色"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="弧形展示图"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_text_shine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="自定义TextView文字变色闪烁"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="音频条形图"
+                android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/button_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="回弹ScrillView"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_jtoolbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="自定义TooBar"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_incident"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="事件拦截机制分析"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_circle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="弧形展示图"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/button_volume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="音频条形图"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/button_scroll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="回弹ScrillView"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/button_incident"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="事件拦截机制分析"
-        android:textAllCaps="false" />
-
-</LinearLayout>
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>
