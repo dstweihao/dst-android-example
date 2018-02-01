@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jweihao.jdemo.ui.activity.custom.ViewActivity">
+
+    <com.jweihao.jdemo.view.MyViewGroupA
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:background="@color/blue"
+        android:layout_height="300dp" />
+
+    <com.jweihao.jdemo.view.MyViewGroupB
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/blueviolet"
+        android:layout_height="200dp" />
+    <com.jweihao.jdemo.view.MyView
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:background="@color/yellow"
+        android:layout_height="100dp" />
+
+</RelativeLayout>

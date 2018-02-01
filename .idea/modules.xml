@@ -5,7 +5,6 @@
       <module fileurl="file://F:\github\JDemo\CustomControl.iml" filepath="F:\github\JDemo\CustomControl.iml" />
       <module fileurl="file://$PROJECT_DIR$/JDemo.iml" filepath="$PROJECT_DIR$/JDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://F:\github\JDemo\app\app.iml" filepath="F:\github\JDemo\app\app.iml" />
     </modules>
   </component>
 </project>

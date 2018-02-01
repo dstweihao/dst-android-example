@@ -6,6 +6,17 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.custom.CustomActivity">
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
     <Button
         android:id="@+id/button_3menu"
@@ -78,5 +89,14 @@
         android:text="回弹ScrillView"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/button_incident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="事件拦截机制分析"
+        android:textAllCaps="false" />
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>
