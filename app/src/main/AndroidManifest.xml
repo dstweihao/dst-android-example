@@ -43,7 +43,9 @@
             android:name="com.jweihao.jdemo.ui.activity.layout.NTVRActivity"
             android:theme="@style/TabLayoutActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimationActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ObjectAnimatorActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PropertyActivity"></activity>
     </application>
 
 </manifest>

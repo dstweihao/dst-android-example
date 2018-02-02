@@ -18,6 +18,14 @@
         android:id="@+id/button_objectanimator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="属性动画" />
+        android:text="属性动画之ObjectAnimator"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="属性动画之PropertyValuesHolder"
+        android:textAllCaps="false" />
 
 </LinearLayout>
