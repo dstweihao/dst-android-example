@@ -3,7 +3,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import com.jweihao.jdemo.utils.GoToActivity;
+import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,38 +45,38 @@ public class CustomActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_3menu:
-                GoToActivity.goToActivity(this, Level3MenuActivity.class);
+                GoToActivityUtil.goToActivity(this, Level3MenuActivity.class);
                 break;
             case R.id.button_square:
-                GoToActivity.goToActivity(this, DragSquareActivity.class);
+                GoToActivityUtil.goToActivity(this, DragSquareActivity.class);
                 break;
             case R.id.button_framlayout:
-                GoToActivity.goToActivity(this, DragFramLayoutActivity.class);
+                GoToActivityUtil.goToActivity(this, DragFramLayoutActivity.class);
                 break;
             case R.id.button_view:
-                GoToActivity.goToActivity(this, MeasureActivity.class);
+                GoToActivityUtil.goToActivity(this, MeasureActivity.class);
                 break;
             case R.id.button_text_color:
-                GoToActivity.goToActivity(this, ColorTextActivity.class);
+                GoToActivityUtil.goToActivity(this, ColorTextActivity.class);
                 break;
             case R.id.button_text_shine:
-                GoToActivity.goToActivity(this, ShineTextViewActivity.class);
+                GoToActivityUtil.goToActivity(this, ShineTextViewActivity.class);
                 break;
             case R.id.button_jtoolbar:
-                GoToActivity.goToActivity(this, JToolBarActivity.class);
+                GoToActivityUtil.goToActivity(this, JToolBarActivity.class);
                 break;
 
             case R.id.button_circle:
-                GoToActivity.goToActivity(this, CircleProgressActivity.class);
+                GoToActivityUtil.goToActivity(this, CircleProgressActivity.class);
                 break;
             case R.id.button_volume:
-                GoToActivity.goToActivity(this, VolumeActivity.class);
+                GoToActivityUtil.goToActivity(this, VolumeActivity.class);
                 break;
             case R.id.button_scroll:
-                GoToActivity.goToActivity(this, ReboundScrollActivity.class);
+                GoToActivityUtil.goToActivity(this, ReboundScrollActivity.class);
                 break;
             case R.id.button_incident:
-                GoToActivity.goToActivity(this, ViewActivity.class);
+                GoToActivityUtil.goToActivity(this, ViewActivity.class);
                 break;
             default:
                 break;

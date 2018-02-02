@@ -28,36 +28,44 @@
         android:textAllCaps="false" />
 
 
-    <!--<Button-->
-        <!--android:id="@+id/button_view"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-
-        <!--android:text="View的测量和绘制"-->
-        <!--android:textAllCaps="false" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/button_text_color"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-
-        <!--android:text="自定义TextView边框填色"-->
-        <!--android:textAllCaps="false" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/button_text_shine"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-
-        <!--android:text="自定义TextView文字变色闪烁"-->
-        <!--android:textAllCaps="false" />-->
+    <Button
+        android:id="@+id/button_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动画"
+        android:textAllCaps="false" />
 
 
     <!--<Button-->
-        <!--android:id="@+id/button_topbar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="TopBar"-->
-        <!--android:textAllCaps="false" />-->
+    <!--android:id="@+id/button_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:text="View的测量和绘制"-->
+    <!--android:textAllCaps="false" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_text_color"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:text="自定义TextView边框填色"-->
+    <!--android:textAllCaps="false" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_text_shine"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:text="自定义TextView文字变色闪烁"-->
+    <!--android:textAllCaps="false" />-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button_topbar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="TopBar"-->
+    <!--android:textAllCaps="false" />-->
 
 </LinearLayout>

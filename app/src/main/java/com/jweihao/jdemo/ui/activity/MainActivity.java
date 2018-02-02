@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
-import com.jweihao.jdemo.utils.GoToActivity;
+import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
 import butterknife.BindView;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonHttp;
     @BindView(R.id.button_layout)
     Button mButtonLayout;
+    @BindView(R.id.button_animation)
+    Button mButtonAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +36,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout})
+    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_custom:
-                GoToActivity.goToActivity(this, CustomActivity.class);
+                GoToActivityUtil.goToActivity(this, CustomActivity.class);
                 break;
             case R.id.button_http:
                 break;
             case R.id.button_layout:
-                GoToActivity.goToActivity(this, LayoutActivity.class);
+                GoToActivityUtil.goToActivity(this, LayoutActivity.class);
+                break;
+            case R.id.button_animation:
+                GoToActivityUtil.goToActivity(this, AnimationActivity.class);
                 break;
             default:
                 break;
 
         }
+    }
+
+    @OnClick(R.id.button_animation)
+    public void onViewClicked() {
     }
 }

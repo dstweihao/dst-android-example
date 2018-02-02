@@ -7,7 +7,7 @@ import android.content.Intent;
  * Created by weihao on 2018/1/30.
  */
 
-public class GoToActivity {
+public class GoToActivityUtil {
     /*
     *
     * 跳转到指定Activity
