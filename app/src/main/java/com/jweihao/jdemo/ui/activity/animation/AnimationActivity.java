@@ -20,6 +20,10 @@ public class AnimationActivity extends AppCompatActivity {
     Button mButtonObjectanimator;
     @BindView(R.id.button_property)
     Button mButtonProperty;
+    @BindView(R.id.button_value)
+    Button mButtonValue;
+    @BindView(R.id.button_animatorset)
+    Button mButtonAnimatorset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,7 @@ public class AnimationActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_view_animation, R.id.button_objectanimator, R.id.button_property})
+    @OnClick({R.id.button_view_animation, R.id.button_objectanimator, R.id.button_property, R.id.button_value, R.id.button_animatorset})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_view_animation:
@@ -40,13 +44,15 @@ public class AnimationActivity extends AppCompatActivity {
             case R.id.button_property:
                 GoToActivityUtil.goToActivity(this, PropertyActivity.class);
                 break;
+            case R.id.button_value:
+                GoToActivityUtil.goToActivity(this, ValueAnimatorActivity.class);
+                break;
+            case R.id.button_animatorset:
+                GoToActivityUtil.goToActivity(this, AnimatorSetActivity.class);
+                break;
             default:
                 break;
 
         }
-    }
-
-    @OnClick(R.id.button_property)
-    public void onViewClicked() {
     }
 }

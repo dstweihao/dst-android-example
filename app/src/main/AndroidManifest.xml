@@ -45,7 +45,9 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimationActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.ObjectAnimatorActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PropertyActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PropertyActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ValueAnimatorActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimatorSetActivity"></activity>
     </application>
 
 </manifest>

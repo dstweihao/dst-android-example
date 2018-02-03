@@ -28,4 +28,17 @@
         android:text="属性动画之PropertyValuesHolder"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/button_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="属性动画之ValueAnimator"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_animatorset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="属性动画之AnimatorSet"
+        android:textAllCaps="false" />
 </LinearLayout>

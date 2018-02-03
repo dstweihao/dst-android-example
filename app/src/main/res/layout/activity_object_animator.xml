@@ -63,6 +63,60 @@
             android:textAllCaps="false" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xml"
+            android:textAllCaps="false" />
+
+        <Button
+        android:id="@+id/button_animate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animate"
+        android:textAllCaps="false" />
+
+        <!--<Button-->
+        <!--android:id="@+id/button_translate"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="位移"-->
+        <!--android:textAllCaps="false" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/button_scale"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="缩放"-->
+        <!--android:textAllCaps="false" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/button_set"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="集合"-->
+        <!--android:textAllCaps="false" />-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/button_wrapper"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="包装"-->
+        <!--android:textAllCaps="false" />-->
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="200dp"
