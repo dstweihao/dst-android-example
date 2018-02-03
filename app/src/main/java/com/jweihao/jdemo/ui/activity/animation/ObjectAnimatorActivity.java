@@ -273,7 +273,8 @@ public class ObjectAnimatorActivity extends AppCompatActivity {
                             public void run() {
 
                             }
-                        });
+                        })
+                        .start();
                 break;
 
             default:
