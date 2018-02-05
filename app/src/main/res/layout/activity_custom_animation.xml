@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:onClick="btnAnim"
-        android:text=" 〓 这里走" />
+        android:text=" 〓〓 这里走" />
 
     <ImageView
         android:id="@+id/imageView"

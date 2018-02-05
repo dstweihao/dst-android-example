@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+    <group>
+        <!--
+        绘制两条直线，每条直线由三个点控制，即起始点和中点，形成初始状态。
+
+        -->
+        <path
+            android:name="path_graph1"
+            android:pathData="
+                M 20,80
+                L 50,80 80,80"
+            android:strokeColor="@color/colorPrimaryDark"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+        <path
+            android:name="path_graph2"
+            android:pathData="
+                M 20,20
+                L 50,20 80,20"
+            android:strokeColor="@color/colorPrimaryDark"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+
+    </group>
+</vector>

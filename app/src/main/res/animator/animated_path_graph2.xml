@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:propertyName="pathData"
+    android:valueFrom="
+    M 20,20
+    L 50,20 80,20"
+    android:valueTo="
+    M 20,20
+    L 50,50 80,20"
+    android:valueType="pathType"/>
+
+    <!--
+        //以上代码中，定义了一个pathType的属性动画，并指定了变换的起始值分别为：
+
+        android:valueFrom="M 20,80 L 50,80 80,80"
+        android:valueTo="M 20,80 L 50,50 80,80"
+
+    -->

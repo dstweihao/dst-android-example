@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+
+    <group
+        android:name="test"
+        android:rotation="0">
+
+        <path
+            android:pathData="M 25 50 a 25,25 0 1,0 50,0"
+            android:strokeColor="@color/colorPrimaryDark"
+            android:strokeWidth="5" />
+    </group>
+</vector>
+
+    <!--    android:width="200dp"   表示SVG图形的具体大小
+            android:height="200dp"
+            android:viewportHeight="100"    表示SVG图形划分的比例
+            android:viewportWidth="100"         -->
+
+    <!--
+            //绘制非填充的图形
+            android:strokeColor="@color/colorPrimaryDark"
+            android:strokeWidth="5"
+
+    -->
+
+    <!--
+            //绘制填充的图形
+            android:fillColor="@color/colorPrimaryDark"
+
+    -->
