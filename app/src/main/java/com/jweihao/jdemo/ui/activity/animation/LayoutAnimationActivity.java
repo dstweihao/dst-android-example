@@ -64,6 +64,7 @@ public class LayoutAnimationActivity extends AppCompatActivity {
 //        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
 //                screenWidthPx, LinearLayout.LayoutParams.WRAP_CONTENT);
         //方式二：使用MarginLayoutParams可以适用LinearLayout和RelativeLayout布局。
+        //设置图片的宽度和长度
         ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(
                 screenWidthPx, LinearLayout.LayoutParams.WRAP_CONTENT);
         imageView.setLayoutParams(layoutParams);

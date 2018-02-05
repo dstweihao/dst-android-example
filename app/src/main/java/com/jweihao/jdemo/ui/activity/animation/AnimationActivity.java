@@ -26,6 +26,8 @@ public class AnimationActivity extends AppCompatActivity {
     Button mButtonAnimatorset;
     @BindView(R.id.button_layout)
     Button mButtonLayout;
+    @BindView(R.id.button_custom)
+    Button mButtonCustom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,7 @@ public class AnimationActivity extends AppCompatActivity {
 
     @OnClick({R.id.button_view_animation, R.id.button_objectanimator,
             R.id.button_property, R.id.button_value, R.id.button_animatorset,
-            R.id.button_layout
+            R.id.button_layout,R.id.button_custom
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -58,10 +60,12 @@ public class AnimationActivity extends AppCompatActivity {
             case R.id.button_layout:
                 GoToActivityUtil.goToActivity(this, LayoutAnimationActivity.class);
                 break;
+            case R.id.button_custom:
+                GoToActivityUtil.goToActivity(this, CustomAnimationActivity.class);
+                break;
             default:
                 break;
 
         }
     }
-
 }
