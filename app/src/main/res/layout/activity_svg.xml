@@ -17,21 +17,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#FFF32a"
-                android:text="方式一：VectorDrawable"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="方式一：VectorDrawable"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -74,21 +73,20 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/colorPrimaryDark" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#FFF32a"
-                android:text="方式二：AnimatedVectorDrawable"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
 
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="方式二：AnimatedVectorDrawable"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
 
             <ImageView
@@ -98,27 +96,20 @@
                 android:layout_gravity="center"
                 android:src="@drawable/animated_vector_test" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#FFF32a"
-                android:text="SVG动画实例之线图动画"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SVG动画实例之线图动画(图标切换)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
             <ImageView
                 android:id="@+id/imageview_graph"
@@ -128,27 +119,19 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/animated_vector_graph" />
 
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#FFF32a"
-                android:text="SVG动画实例之静态地月日三星系统"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SVG动画实例之静态地月日三星系统"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
             <ImageView
 
@@ -158,28 +141,19 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/anim_vector_earth" />
 
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#FFF32a"
-                android:text="SVG动画实例之动态地月日三星系统"
-                android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/colorPrimaryDark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SVG动画实例之动态地月日三星系统"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
             <ImageView
                 android:id="@+id/imageview_earth"
@@ -189,6 +163,29 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/animated_vector_earth" />
 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SVG动画实例之轨迹动画(搜索框)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+
+                android:id="@+id/imageview_search"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/animated_vector_search" />
 
 
         </LinearLayout>

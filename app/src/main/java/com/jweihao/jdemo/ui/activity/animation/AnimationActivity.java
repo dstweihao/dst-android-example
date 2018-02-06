@@ -30,6 +30,8 @@ public class AnimationActivity extends AppCompatActivity {
     Button mButtonCustom;
     @BindView(R.id.button_svg)
     Button mButtonSvg;
+    @BindView(R.id.button_effects)
+    Button mButtonEffects;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class AnimationActivity extends AppCompatActivity {
 
     @OnClick({R.id.button_view_animation, R.id.button_objectanimator,
             R.id.button_property, R.id.button_value, R.id.button_animatorset,
-            R.id.button_layout, R.id.button_custom,R.id.button_svg
+            R.id.button_layout, R.id.button_custom, R.id.button_svg,R.id.button_effects
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -68,9 +70,14 @@ public class AnimationActivity extends AppCompatActivity {
             case R.id.button_svg:
                 GoToActivityUtil.goToActivity(this, SVGActivity.class);
                 break;
+            case R.id.button_effects:
+                GoToActivityUtil.goToActivity(this, AnimEffectsActivity.class);
+                break;
             default:
                 break;
 
         }
     }
+
+
 }

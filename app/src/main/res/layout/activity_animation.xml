@@ -61,4 +61,10 @@
         android:layout_height="wrap_content"
         android:text="Android 5.X SVG矢量动画机制"
         android:textAllCaps="false" />
+    <Button
+        android:id="@+id/button_effects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android 动画特效"
+        android:textAllCaps="false" />
 </LinearLayout>

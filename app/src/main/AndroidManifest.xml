@@ -50,7 +50,11 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimatorSetActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.LayoutAnimationActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.CustomAnimationActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.SVGActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.SVGActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimEffectsActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.MenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.TimerActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PullDownActivity"></activity>
     </application>
 
 </manifest>
