@@ -3,9 +3,9 @@
     android:drawable="@drawable/anim_vector_graph">
     <target
         android:name="path_graph1"
-        android:animation="@animator/animated_path_graph1" />
+        android:animation="@animator/objectanimator_graph1" />
 
     <target
         android:name="path_graph2"
-        android:animation="@animator/animated_path_graph2" />
+        android:animation="@animator/objectanimator_graph2" />
 </animated-vector>

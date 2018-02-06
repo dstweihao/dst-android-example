@@ -20,6 +20,8 @@ public class SVGActivity extends AppCompatActivity {
     ImageView mImageviewTest;
     @BindView(R.id.imageview_graph)
     ImageView mImageviewGraph;
+    @BindView(R.id.imageview_earth)
+    ImageView mImageviewEarth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class SVGActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.imageview_test, R.id.imageview_graph})
+    @OnClick({R.id.imageview_test, R.id.imageview_graph, R.id.imageview_earth})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.imageview_test:
@@ -37,9 +39,15 @@ public class SVGActivity extends AppCompatActivity {
                 ((Animatable) mImageviewTest.getDrawable()).start();
                 break;
             case R.id.imageview_graph:
-                Drawable drawable = mImageviewGraph.getDrawable();
-                if (drawable instanceof Animatable) {
-                    ((Animatable) drawable).start();
+                Drawable graph = mImageviewGraph.getDrawable();
+                if (graph instanceof Animatable) {
+                    ((Animatable) graph).start();
+                }
+                break;
+            case R.id.imageview_earth:
+                Drawable earth = mImageviewEarth.getDrawable();
+                if (earth instanceof Animatable) {
+                    ((Animatable) earth).start();
                 }
                 break;
             default:

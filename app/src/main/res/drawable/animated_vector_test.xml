@@ -3,6 +3,6 @@
     android:drawable="@drawable/anim_vector_fill">
     <target
         android:name="test"
-        android:animation="@animator/anim_path" />
+        android:animation="@animator/objectanimator_360" />
 
 </animated-vector>
