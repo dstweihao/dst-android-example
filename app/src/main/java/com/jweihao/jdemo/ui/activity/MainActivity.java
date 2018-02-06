@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
+import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonLayout;
     @BindView(R.id.button_animation)
     Button mButtonAnimation;
+    @BindView(R.id.button_md)
+    Button mButtonMd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation})
+    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
+            R.id.button_md
+    })
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_custom:
@@ -50,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_animation:
                 GoToActivityUtil.goToActivity(this, AnimationActivity.class);
                 break;
+            case R.id.button_md:
+                GoToActivityUtil.goToActivity(this, MaterialDesignActivity.class);
+                break;
             default:
                 break;
 
         }
     }
 
-    @OnClick(R.id.button_animation)
-    public void onViewClicked() {
-    }
+
 }

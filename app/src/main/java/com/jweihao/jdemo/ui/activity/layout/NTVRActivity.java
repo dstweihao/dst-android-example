@@ -17,6 +17,10 @@ import com.jweihao.jdemo.utils.ScreenUtil;
 import com.jweihao.jdemo.view.JudgeNestedScrollView;
 import com.wh.customcontrol.R;
 
+/*
+* NestedScrollView + Tablayout + ViewPager + RecyclerView
+*
+* */
 
 public class NTVRActivity extends AppCompatActivity {
     private ViewPager mViewPager;

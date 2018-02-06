@@ -36,13 +36,12 @@
         android:textAllCaps="false" />
 
 
-    <!--<Button-->
-    <!--android:id="@+id/button_view"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-
-    <!--android:text="View的测量和绘制"-->
-    <!--android:textAllCaps="false" />-->
+    <Button
+    android:id="@+id/button_md"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Material Design"
+    android:textAllCaps="false" />
 
     <!--<Button-->
     <!--android:id="@+id/button_text_color"-->
