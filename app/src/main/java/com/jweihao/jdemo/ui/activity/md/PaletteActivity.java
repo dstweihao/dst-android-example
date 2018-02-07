@@ -17,22 +17,22 @@ public class PaletteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_palette);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.snow);
-        //创建Palette对象,该方法过时。
-        Palette.generateAsync(bitmap,
-                new Palette.PaletteAsyncListener() {
-                    @Override
-                    public void onGenerated(Palette palette) {
-                        // 通过Palette来获取对应的色调
-                        Palette.Swatch vibrant =
-                                palette.getDarkVibrantSwatch();
-                        // 将颜色设置给相应的组件
-                        getActionBar().setBackgroundDrawable(
-                                new ColorDrawable(vibrant.getRgb()));
-                        Window window = getWindow();
-                        window.setStatusBarColor(vibrant.getRgb());
-                    }
-                });
+//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.snow);
+//        //创建Palette对象,该方法过时。
+//        Palette.generateAsync(bitmap,
+//                new Palette.PaletteAsyncListener() {
+//                    @Override
+//                    public void onGenerated(Palette palette) {
+//                        // 通过Palette来获取对应的色调
+//                        Palette.Swatch vibrant =
+//                                palette.getDarkVibrantSwatch();
+//                        // 将颜色设置给相应的组件
+//                        getActionBar().setBackgroundDrawable(
+//                                new ColorDrawable(vibrant.getRgb()));
+//                        Window window = getWindow();
+//                        window.setStatusBarColor(vibrant.getRgb());
+//                    }
+//                });
         //创建Palette对象
 //        Palette.Builder builder = Palette.from(bitmap);
 //        builder.generate(new Palette.PaletteAsyncListener() {

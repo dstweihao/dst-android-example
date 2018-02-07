@@ -55,8 +55,12 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.MenuActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.TimerActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.PullDownActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.PaletteActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.PaletteActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ShadowActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.TintingActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ClippingActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerActivity"></activity>
     </application>
 
 </manifest>

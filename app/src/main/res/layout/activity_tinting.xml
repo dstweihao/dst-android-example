@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.md.TintingActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="multiply" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="screen" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="add" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="src_atop" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="src_in" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/meichangsu"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="src_over" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

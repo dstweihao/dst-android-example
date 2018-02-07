@@ -11,7 +11,35 @@
     <Button
         android:id="@+id/button_palette"
         android:layout_width="match_parent"
-        android:text="通过Palette设置系统色调"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="通过Palette设置系统色调" />
 
+    <Button
+        android:id="@+id/button_flatness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视图与阴影" />
+
+
+    <Button
+        android:id="@+id/button_tinting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinting(着色)"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/button_clipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clipping(裁剪)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView"
+        android:textAllCaps="false" />
 </LinearLayout>
