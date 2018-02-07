@@ -24,6 +24,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
     Button mButtonClipping;
     @BindView(R.id.button_recycler)
     Button mButtonRecycler;
+    @BindView(R.id.button_transition)
+    Button mButtonTransition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_palette, R.id.button_flatness, R.id.button_tinting,
-            R.id.button_clipping,R.id.button_recycler
+            R.id.button_clipping, R.id.button_recycler,R.id.button_transition
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -52,6 +54,9 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 break;
             case R.id.button_recycler:
                 GoToActivityUtil.goToActivity(this, RecyclerActivity.class);
+                break;
+            case R.id.button_transition:
+                GoToActivityUtil.goToActivity(this, TransitionAnimActivity.class);
                 break;
             default:
                 break;
