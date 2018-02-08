@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity">
+
+    <!--
+    方式一：在xml中设置 android:stateListAnimator="@drawable/animated_selector_view_changes"
+    方式二：在代码中设置。
+    -->
+    <Button
+        android:id="@+id/button_view_changes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="长按我旋转360°"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/iamge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/animated_selector_icon_changs" />
+
+</LinearLayout>
