@@ -8,43 +8,42 @@
     tools:context="com.jweihao.jdemo.ui.activity.md.TransitionAnimActivity">
 
 
-
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:onClick="explode"
-        android:textAllCaps="false"
-        android:text="explode" />
+        android:text="explode"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:onClick="slide"
-        android:textAllCaps="false"
-        android:text="slide" />
+        android:text="slide"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:onClick="fade"
-        android:textAllCaps="false"
-        android:text="fade" />
+        android:text="fade"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:transitionName="share"
+        android:layout_height="wrap_content"
         android:onClick="share"
+        android:text="share"
         android:textAllCaps="false"
-        android:text="share" />
+        android:transitionName="share" />
 
-    <Button
-        android:id="@+id/fab_button"
-        android:layout_width="56dp"
-        android:transitionName="fab"
-        android:textAllCaps="false"
-        android:layout_height="56dp"
-        android:background="@drawable/e"
-        android:elevation="5dp"/>
+    <ImageView
+        android:id="@+id/fab_imageview"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/e"
+        android:elevation="5dp"
+        android:transitionName="fab" />
 
 </LinearLayout>
