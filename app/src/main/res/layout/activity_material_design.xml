@@ -50,4 +50,17 @@
         android:layout_height="wrap_content"
         android:text="Android 过渡动画"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MaterialDesign动画效果之波纹效果"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/button_circular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MaterialDesign动画效果之CircularReveal"
+        android:textAllCaps="false" />
 </LinearLayout>

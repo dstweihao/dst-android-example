@@ -26,6 +26,10 @@ public class MaterialDesignActivity extends AppCompatActivity {
     Button mButtonRecycler;
     @BindView(R.id.button_transition)
     Button mButtonTransition;
+    @BindView(R.id.button_ripple)
+    Button mButtonRipple;
+    @BindView(R.id.button_circular)
+    Button mButtonCircular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_palette, R.id.button_flatness, R.id.button_tinting,
-            R.id.button_clipping, R.id.button_recycler,R.id.button_transition
+            R.id.button_clipping, R.id.button_recycler, R.id.button_transition,
+            R.id.button_ripple, R.id.button_circular
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -57,6 +62,12 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 break;
             case R.id.button_transition:
                 GoToActivityUtil.goToActivity(this, TransitionAnimActivity.class);
+                break;
+            case R.id.button_ripple:
+                GoToActivityUtil.goToActivity(this, RippleActivity.class);
+                break;
+            case R.id.button_circular:
+                GoToActivityUtil.goToActivity(this, CircularRevealActivity.class);
                 break;
             default:
                 break;

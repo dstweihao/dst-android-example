@@ -62,7 +62,9 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.ClippingActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionAnimActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionsToActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionsToActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RippleActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.CircularRevealActivity"></activity>
     </application>
 
 </manifest>

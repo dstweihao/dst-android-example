@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.md.RippleActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="有界波纹"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="无界波纹"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ripple"
+        android:text="通过xml创建的波纹"
+        android:textColor="@color/white" />
+    
+
+
+</LinearLayout>
