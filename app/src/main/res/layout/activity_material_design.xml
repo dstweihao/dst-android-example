@@ -71,4 +71,11 @@
         android:layout_height="wrap_content"
         android:text="MaterialDesign动画效果之视图状态更改动画"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        android:textAllCaps="false" />
 </LinearLayout>

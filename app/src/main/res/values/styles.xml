@@ -13,6 +13,22 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="Toolbar" parent="AppTheme">
+        <!--&lt;!&ndash;toolbar颜色&ndash;&gt;-->
+        <!--<item name="colorPrimary">#4876FF</item>-->
+        <!--&lt;!&ndash;状态栏颜色&ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">#3A5FCD</item>-->
+        <!--&lt;!&ndash;窗口的背景颜色&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+        <!--add SearchView-->
+        <!--Toolbar中，可以像使用Actionbar那样增加一些小的View，比如用于搜索的SearchView-->
+        <item name="searchViewStyle">@style/MySearchView</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="MySearchView" parent="Widget.AppCompat.SearchView" />
+
 
     <!--设置TabLayout字体大小-->
     <style name="TabLayoutTextStyle" parent="android:TextAppearance.DeviceDefault.Medium">

@@ -17,7 +17,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.jweihao.jdemo.ui.activity.MainActivity">
             <intent-filter>
@@ -65,7 +64,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionsToActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RippleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.CircularRevealActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity" android:theme="@style/Toolbar"></activity>
     </application>
 
 </manifest>
