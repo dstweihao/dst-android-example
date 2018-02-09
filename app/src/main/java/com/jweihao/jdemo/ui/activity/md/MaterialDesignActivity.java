@@ -34,6 +34,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
     Button mButtonStatelist;
     @BindView(R.id.button_toolbar)
     Button mButtonToolbar;
+    @BindView(R.id.button_notification)
+    Button mButtonNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +48,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
     @OnClick({R.id.button_palette, R.id.button_flatness, R.id.button_tinting,
             R.id.button_clipping, R.id.button_recycler, R.id.button_transition,
             R.id.button_ripple, R.id.button_circular, R.id.button_statelist,
-            R.id.button_toolbar
+            R.id.button_toolbar, R.id.button_notification
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -81,9 +83,12 @@ public class MaterialDesignActivity extends AppCompatActivity {
             case R.id.button_toolbar:
                 GoToActivityUtil.goToActivity(this, ToolbarActivity.class);
                 break;
+
+            case R.id.button_notification:
+                GoToActivityUtil.goToActivity(this, NotificationActivity.class);
+                break;
             default:
                 break;
         }
     }
-
 }

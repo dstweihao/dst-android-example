@@ -7,75 +7,95 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity">
 
-
-    <Button
-        android:id="@+id/button_palette"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="通过Palette设置系统色调"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/button_flatness"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="视图与阴影" />
+        android:layout_height="wrap_content">
 
 
-    <Button
-        android:id="@+id/button_tinting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tinting(着色)"
-        android:textAllCaps="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_palette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通过Palette设置系统色调"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_flatness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="视图与阴影" />
 
 
-    <Button
-        android:id="@+id/button_clipping"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Clipping(裁剪)"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_tinting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tinting(着色)"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView"
-        android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_transition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Android 过渡动画"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_clipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clipping(裁剪)"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_ripple"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MaterialDesign动画效果之波纹效果"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_circular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MaterialDesign动画效果之CircularReveal"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_transition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 过渡动画"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_statelist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MaterialDesign动画效果之视图状态更改动画"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MaterialDesign动画效果之波纹效果"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/button_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Toolbar"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/button_circular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MaterialDesign动画效果之CircularReveal"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_statelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MaterialDesign动画效果之视图状态更改动画"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toolbar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
+

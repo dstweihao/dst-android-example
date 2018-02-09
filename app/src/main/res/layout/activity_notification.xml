@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.jweihao.jdemo.ui.activity.md.NotificationActivity">
+
+
+    <Button
+        android:id="@+id/button_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_collapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collapsed"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_headsup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Headsup"
+        android:textAllCaps="false" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@+id/visible_public_radio_button"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_public"
+            android:text="public" />
+
+        <RadioButton
+            android:id="@+id/radio_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_private"
+            android:text="private" />
+
+        <RadioButton
+            android:id="@+id/radio_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_secret"
+            android:text="secret" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_visibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Visibility"
+        android:textAllCaps="false" />
+
+</LinearLayout>

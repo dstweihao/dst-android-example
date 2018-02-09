@@ -65,7 +65,10 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RippleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.CircularRevealActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity" android:theme="@style/Toolbar"></activity>
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity"
+            android:theme="@style/Toolbar" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity"></activity>
     </application>
 
 </manifest>

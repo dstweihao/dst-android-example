@@ -47,7 +47,7 @@ public class ToolbarActivity extends AppCompatActivity {
         /*
         * 简单来说，openDrawerContentDescRes与closeDrawerContentDescRes
         * 的内容不会显示在屏幕上，但是可以通过accessibility services转换成语音为那些视力不好的人服务。
-        * 
+        *
         * */
         mActionBarDrawerToggle = new ActionBarDrawerToggle(
                 this,
