@@ -37,19 +37,25 @@
 
 
     <Button
-    android:id="@+id/button_md"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Material Design"
-    android:textAllCaps="false" />
+        android:id="@+id/button_md"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material Design"
+        android:textAllCaps="false" />
 
-    <!--<Button-->
-    <!--android:id="@+id/button_text_color"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
+    <Button
+        android:id="@+id/button_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android性能优化"
+        android:textAllCaps="false" />
 
-    <!--android:text="自定义TextView边框填色"-->
-    <!--android:textAllCaps="false" />-->
+    <Button
+        android:id="@+id/button_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实例"
+        android:textAllCaps="false" />
 
     <!--<Button-->
     <!--android:id="@+id/button_text_shine"-->

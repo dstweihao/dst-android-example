@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.property.ViewStubActivity">
+
+    <Button
+        android:id="@+id/button_visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visible"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_inflate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inflate"
+        android:textAllCaps="false" />
+
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_textview" />
+
+</LinearLayout>

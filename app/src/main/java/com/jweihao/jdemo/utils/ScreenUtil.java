@@ -8,6 +8,7 @@ public class ScreenUtil {
 
 
     /**
+     * @param context
      * @return 获取屏幕的宽 单位：px
      */
     public static int getScreenWidthPx(Context context) {
@@ -19,6 +20,7 @@ public class ScreenUtil {
     }
 
     /**
+     * @param context
      * @return 获取屏幕的高 单位：px
      */
     public static int getScreenHeightPx(Context context) {
@@ -27,5 +29,16 @@ public class ScreenUtil {
         windowManager.getDefaultDisplay().getMetrics(dm);
         return dm.heightPixels;
 
+    }
+
+    /**
+     * @param context
+     * @return 获取屏幕的密度
+     */
+    public static float getDeviceDensity(Context context) {
+        DisplayMetrics metrics = new DisplayMetrics();
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        wm.getDefaultDisplay().getMetrics(metrics);
+        return metrics.density;
     }
 }

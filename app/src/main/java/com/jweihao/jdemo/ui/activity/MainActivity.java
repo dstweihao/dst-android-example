@@ -7,8 +7,10 @@ import android.widget.Button;
 
 import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
+import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
+import com.jweihao.jdemo.ui.activity.property.ViewStubActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
@@ -29,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonAnimation;
     @BindView(R.id.button_md)
     Button mButtonMd;
+    @BindView(R.id.button_example)
+    Button mButtonExample;
+    @BindView(R.id.button_property)
+    Button mButtonProperty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
-            R.id.button_md
+            R.id.button_md, R.id.button_property, R.id.button_example
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -58,11 +64,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_md:
                 GoToActivityUtil.goToActivity(this, MaterialDesignActivity.class);
                 break;
+
+            case R.id.button_property:
+                GoToActivityUtil.goToActivity(this, ViewStubActivity.class);
+                break;
+            case R.id.button_example:
+                GoToActivityUtil.goToActivity(this, ExampleActivity.class);
+                break;
             default:
                 break;
 
         }
     }
-
-
 }

@@ -68,7 +68,11 @@
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity"
             android:theme="@style/Toolbar" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity"></activity>
     </application>
 
 </manifest>

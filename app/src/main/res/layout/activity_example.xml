@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.example.ExampleActivity">
+
+    <Button
+        android:id="@+id/button_jigsaw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拼图游戏" />
+
+    <Button
+        android:id="@+id/button_2048"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2048" />
+
+</LinearLayout>
