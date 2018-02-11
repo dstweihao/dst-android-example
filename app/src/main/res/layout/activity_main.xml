@@ -6,6 +6,12 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.MainActivity">
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <Button
         android:id="@+id/button_custom"
         android:layout_width="match_parent"
@@ -74,3 +80,5 @@
     <!--android:textAllCaps="false" />-->
 
 </LinearLayout>
+</LinearLayout>
+

@@ -20,4 +20,6 @@ public class SystemUtil {
         int heapSize = manager.getLargeMemoryClass();
         return heapSize;
     }
+
+
 }
