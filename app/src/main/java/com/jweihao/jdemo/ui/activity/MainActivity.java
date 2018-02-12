@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
+import com.jweihao.jdemo.ui.activity.canvas.CanvasActivity;
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
 import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonExample;
     @BindView(R.id.button_property)
     Button mButtonProperty;
+    @BindView(R.id.button_canvas)
+    Button mButtonCanvas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
-            R.id.button_md, R.id.button_property, R.id.button_example
+            R.id.button_md, R.id.button_property, R.id.button_example,R.id.button_canvas
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button_animation:
                 GoToActivityUtil.goToActivity(this, AnimationActivity.class);
+                break;
+            case R.id.button_canvas:
+                GoToActivityUtil.goToActivity(this, CanvasActivity.class);
                 break;
             case R.id.button_md:
                 GoToActivityUtil.goToActivity(this, MaterialDesignActivity.class);
@@ -75,5 +81,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+    }
+
+    @OnClick(R.id.button_canvas)
+    public void onViewClicked() {
     }
 }

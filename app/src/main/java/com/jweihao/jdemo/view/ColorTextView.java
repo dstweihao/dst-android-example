@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 
 /**
@@ -35,7 +36,7 @@ public class ColorTextView extends android.support.v7.widget.AppCompatTextView {
     private void initView() {
 
         mPaint1 = new Paint();
-        mPaint1.setColor(getResources().getColor(android.R.color.holo_blue_bright));
+        mPaint1.setColor(ContextCompat.getColor(getContext(), android.R.color.holo_blue_bright));
         mPaint1.setStyle(Paint.Style.FILL);
         mPaint2 = new Paint();
         mPaint2.setColor(Color.YELLOW);

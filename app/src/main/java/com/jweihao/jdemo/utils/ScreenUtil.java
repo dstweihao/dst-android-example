@@ -3,6 +3,7 @@ package com.jweihao.jdemo.utils;
 import android.content.Context;
 import android.renderscript.Sampler;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.WindowManager;
 
 public class ScreenUtil {
@@ -91,4 +92,66 @@ public class ScreenUtil {
         return (int) (spValue * fontScale + 0.5f);
     }
 
+
+    /**
+     * 使用系统提供的TypedValue类帮助我们转换
+     *
+     * @param context
+     * @param dp
+     * @return
+     */
+    protected int dp2px(Context context, int dp) {
+        return (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                dp,
+                context.getResources().getDisplayMetrics()
+        );
+    }
+
+
+    /**
+     *
+     * 使用系统提供的TypedValue类帮助我们转换
+     *
+     * @param context
+     * @param sp
+     * @return
+     */
+    protected int sp2px(Context context, int sp) {
+        return (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_SP,
+                sp,
+                context.getResources().getDisplayMetrics()
+        );
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

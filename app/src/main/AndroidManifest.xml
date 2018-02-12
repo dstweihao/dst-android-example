@@ -72,7 +72,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.canvas.CanvasActivity"></activity>
     </application>
 
 </manifest>
