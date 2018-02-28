@@ -18,6 +18,8 @@ public class ExampleActivity extends AppCompatActivity {
     Button mButtonJigsaw;
     @BindView(R.id.button_2048)
     Button mButton2048;
+    @BindView(R.id.button_weibo)
+    Button mButtonWeibo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class ExampleActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_jigsaw, R.id.button_2048})
+    @OnClick({R.id.button_jigsaw, R.id.button_2048,R.id.button_weibo})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_jigsaw:
@@ -35,8 +37,12 @@ public class ExampleActivity extends AppCompatActivity {
             case R.id.button_2048:
                 GoToActivityUtil.goToActivity(this, Game2048Activity.class);
                 break;
+            case R.id.button_weibo:
+                GoToActivityUtil.goToActivity(this, WeiBoActivity.class);
+                break;
             default:
                 break;
         }
     }
+
 }

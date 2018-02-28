@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -73,7 +74,13 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.canvas.CanvasActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.canvas.CanvasActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.example.WeiBoActivity"
+            android:theme="@style/TabLayoutActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.example.WeiBoDetailsActivity"
+            android:theme="@style/TabLayoutActivity" />
     </application>
 
 </manifest>

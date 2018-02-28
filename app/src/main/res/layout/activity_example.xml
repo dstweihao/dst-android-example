@@ -19,4 +19,11 @@
         android:layout_height="wrap_content"
         android:text="2048" />
 
+    <Button
+        android:id="@+id/button_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android 仿微博发布动态、QQ空间发布说说、微信朋友圈等功能"
+        android:textAllCaps="false" />
+
 </LinearLayout>
