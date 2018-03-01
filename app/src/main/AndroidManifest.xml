@@ -81,6 +81,7 @@
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.WeiBoDetailsActivity"
             android:theme="@style/TabLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity"></activity>
     </application>
 
 </manifest>

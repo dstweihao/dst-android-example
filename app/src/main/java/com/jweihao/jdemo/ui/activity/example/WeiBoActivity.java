@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -42,6 +44,8 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
     RecyclerView mLifeRecycler;
     @BindView(R.id.v_image_watcher)
     ImageWatcher mImageWatcher;
+    @BindView(R.id.weibo_swipefresh)
+    SwipeRefreshLayout mWeiboSwipefresh;
     private boolean isTranslucentStatus = false;
     private MessageAdapter adapter;
 
@@ -68,7 +72,9 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.headBackButton:
+                WeiBoActivity.this.finish();
                 break;
+            //友盟一键分享
             case R.id.headShareButton:
                 break;
             default:
@@ -77,6 +83,15 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
     }
 
     private void initData() {
+
+        //下拉刷新
+        mWeiboSwipefresh.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorPrimary));
+        mWeiboSwipefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshData();
+            }
+        });
 
         mLifeRecycler.setLayoutManager(new LinearLayoutManager(this));
         mLifeRecycler.addItemDecoration(new SpaceItemDecorationUtil(this).setSpace(14).setSpaceColor(0xFFECECEC));
@@ -114,6 +129,31 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
         });
 
         ImageWatcherUtil.fitsSystemWindows(isTranslucentStatus, findViewById(R.id.v_fit));
+    }
+
+    private void refreshData() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        //请求数据
+                        initData();
+                        //刷新数据
+                        adapter.notifyDataSetChanged();
+                        //关闭刷新状态
+                        mWeiboSwipefresh.setRefreshing(false);
+                    }
+                });
+            }
+        }).start();
+
     }
 
 

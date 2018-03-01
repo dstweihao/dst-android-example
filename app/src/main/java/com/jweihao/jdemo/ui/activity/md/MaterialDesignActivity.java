@@ -36,6 +36,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
     Button mButtonToolbar;
     @BindView(R.id.button_notification)
     Button mButtonNotification;
+    @BindView(R.id.button_swipeRefresh)
+    Button mButtonSwipeRefresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +50,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
     @OnClick({R.id.button_palette, R.id.button_flatness, R.id.button_tinting,
             R.id.button_clipping, R.id.button_recycler, R.id.button_transition,
             R.id.button_ripple, R.id.button_circular, R.id.button_statelist,
-            R.id.button_toolbar, R.id.button_notification
+            R.id.button_toolbar, R.id.button_notification,R.id.button_swipeRefresh
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -86,6 +88,9 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
             case R.id.button_notification:
                 GoToActivityUtil.goToActivity(this, NotificationActivity.class);
+                break;
+            case R.id.button_swipeRefresh:
+                GoToActivityUtil.goToActivity(this, SwipeRefreshLayoutActivity.class);
                 break;
             default:
                 break;

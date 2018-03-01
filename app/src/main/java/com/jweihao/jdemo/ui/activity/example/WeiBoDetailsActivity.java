@@ -69,6 +69,7 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.headBackButton:
+                WeiBoDetailsActivity.this.finish();
                 break;
             case R.id.headShareButton:
                 break;
