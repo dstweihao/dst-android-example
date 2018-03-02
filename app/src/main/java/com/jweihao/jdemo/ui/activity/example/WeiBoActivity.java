@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +47,8 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
     ImageWatcher mImageWatcher;
     @BindView(R.id.weibo_swipefresh)
     SwipeRefreshLayout mWeiboSwipefresh;
+    @BindView(R.id.fab)
+    FloatingActionButton mFab;
     private boolean isTranslucentStatus = false;
     private MessageAdapter adapter;
 
@@ -68,7 +71,7 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
     }
 
 
-    @OnClick({R.id.headBackButton, R.id.headShareButton})
+    @OnClick({R.id.headBackButton, R.id.headShareButton, R.id.fab})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.headBackButton:
@@ -77,6 +80,8 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
             //友盟一键分享
             case R.id.headShareButton:
                 break;
+            case R.id.fab:
+                Toast.makeText(this, "我是发帖按钮", Toast.LENGTH_SHORT).show();
             default:
                 break;
         }
@@ -96,7 +101,7 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
         mLifeRecycler.setLayoutManager(new LinearLayoutManager(this));
         mLifeRecycler.addItemDecoration(new SpaceItemDecorationUtil(this).setSpace(14).setSpaceColor(0xFFECECEC));
         mLifeRecycler.setAdapter(adapter = new MessageAdapter(this).setPictureClickCallback(this));
-        adapter.set(Data.get());
+        adapter.set(Data.get(), 1);
 
         // 一般来讲， ImageWatcher 需要占据全屏的位置
         // 如果是透明状态栏，你需要给ImageWatcher标记 一个偏移值，以修正点击ImageView查看的启动动画的Y轴起点的不正确
@@ -159,7 +164,8 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
 
     @Override
     public void onThumbPictureClick(ImageView i, List<ImageView> imageGroupList, List<String> urlList) {
-        mImageWatcher.show(i, imageGroupList, urlList);
+        mImageWatcher.show(mFab, i, imageGroupList, urlList);
+        mFab.setVisibility(View.GONE);
     }
 
     @Override

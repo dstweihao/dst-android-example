@@ -34,7 +34,8 @@ dependencies {
     implementation 'com.android.support:cardview-v7:27.0.2'
 
     //微博说说查看图片
-    compile 'ch.ielse:imagewatcher:1.0.3'
+//    compile 'ch.ielse:imagewatcher:1.0.3'
+    compile project(path: ':imagewatcher')
 
     //Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'

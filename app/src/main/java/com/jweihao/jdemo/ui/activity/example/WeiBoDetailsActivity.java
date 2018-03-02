@@ -87,7 +87,7 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
         mLifeRecycler.setLayoutManager(new LinearLayoutManager(this));
         mLifeRecycler.addItemDecoration(new SpaceItemDecorationUtil(this).setSpace(14).setSpaceColor(0xFFECECEC));
         mLifeRecycler.setAdapter(adapter = new MessageAdapter(this).setPictureClickCallback(this));
-        adapter.set(mDataList);
+        adapter.set(mDataList, 2);
 
         // 一般来讲， ImageWatcher 需要占据全屏的位置
         // 如果是透明状态栏，你需要给ImageWatcher标记 一个偏移值，以修正点击ImageView查看的启动动画的Y轴起点的不正确
@@ -125,7 +125,8 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
 
     @Override
     public void onThumbPictureClick(ImageView i, List<ImageView> imageGroupList, List<String> urlList) {
-        mImageWatcher.show(i, imageGroupList, urlList);
+        mImageWatcher.show(null, i, imageGroupList, urlList);
+
     }
 
     @Override

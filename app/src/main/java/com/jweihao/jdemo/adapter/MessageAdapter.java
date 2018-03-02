@@ -27,6 +27,7 @@ public class MessageAdapter extends RecyclerView.Adapter {
     private final CropCircleTransformation mCropCircleTransformation;
     private MessagePicturesLayout.Callback mCallback;
     private Data mData;
+    private int type;
 
     public MessageAdapter(Context context) {
         mCropCircleTransformation = new CropCircleTransformation();
@@ -37,10 +38,11 @@ public class MessageAdapter extends RecyclerView.Adapter {
         return this;
     }
 
-    public void set(List<Data> dataList) {
+    public void set(List<Data> dataList, int type) {
         mDataList.clear();
         if (dataList != null) {
             mDataList.addAll(dataList);
+            this.type = type;
         }
         notifyDataSetChanged();
     }
@@ -74,14 +76,17 @@ public class MessageAdapter extends RecyclerView.Adapter {
             tTime.setText(mData.getCreateTime());
             tContent.setText(mData.getContent());
             lPictures.set(mData.getPictureThumbList(), mData.getPictureList());
-            mItemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), WeiBoDetailsActivity.class);
-                    intent.putExtra("Data", mDataList.get(pos));
-                    v.getContext().startActivity(intent);
-                }
-            });
+            if (type == 1) {
+                mItemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), WeiBoDetailsActivity.class);
+                        intent.putExtra("Data", mDataList.get(pos));
+                        v.getContext().startActivity(intent);
+                    }
+                });
+            }
+
         }
     }
 
