@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JDemo.iml" filepath="$PROJECT_DIR$/JDemo.iml" />
+      <module fileurl="file://F:\github\Kawhi\JDemo.iml" filepath="F:\github\Kawhi\JDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kawhi.iml" filepath="$PROJECT_DIR$/Kawhi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\github\Kawhi\app\app.iml" filepath="F:\github\Kawhi\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/imagewatcher/imagewatcher.iml" filepath="$PROJECT_DIR$/imagewatcher/imagewatcher.iml" />
+      <module fileurl="file://F:\github\Kawhi\imagewatcher\imagewatcher.iml" filepath="F:\github\Kawhi\imagewatcher\imagewatcher.iml" />
     </modules>
   </component>
 </project>

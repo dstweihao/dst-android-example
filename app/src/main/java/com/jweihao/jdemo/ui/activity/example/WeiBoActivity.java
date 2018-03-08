@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.jweihao.jdemo.adapter.MessageAdapter;
 import com.jweihao.jdemo.bean.Data;
+import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.jweihao.jdemo.utils.ImageWatcherUtil;
 import com.jweihao.jdemo.utils.SpaceItemDecorationUtil;
 import com.jweihao.jdemo.view.MessagePicturesLayout;
@@ -81,7 +82,8 @@ public class WeiBoActivity extends AppCompatActivity implements ImageWatcher.OnP
             case R.id.headShareButton:
                 break;
             case R.id.fab:
-                Toast.makeText(this, "我是发帖按钮", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "我是发帖按钮", Toast.LENGTH_SHORT).show();
+                GoToActivityUtil.goToActivity(this, SendWeiBoActivity.class);
             default:
                 break;
         }

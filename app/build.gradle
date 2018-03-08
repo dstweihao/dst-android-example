@@ -34,7 +34,7 @@ dependencies {
     implementation 'com.android.support:cardview-v7:27.0.2'
 
     //微博说说查看图片
-//    compile 'ch.ielse:imagewatcher:1.0.3'
+//  compile 'ch.ielse:imagewatcher:1.0.3'
     compile project(path: ':imagewatcher')
 
     //Picasso
@@ -42,4 +42,6 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.6.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    //图片选择器
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.0'
 }
