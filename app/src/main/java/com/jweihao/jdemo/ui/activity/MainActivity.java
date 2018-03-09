@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButtonProperty;
     @BindView(R.id.button_canvas)
     Button mButtonCanvas;
+    @BindView(R.id.button_sdk)
+    Button mButtonSdk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
-            R.id.button_md, R.id.button_property, R.id.button_example,R.id.button_canvas
+            R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas,
+            R.id.button_sdk
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -77,13 +80,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_example:
                 GoToActivityUtil.goToActivity(this, ExampleActivity.class);
                 break;
+            case R.id.button_sdk:
+                GoToActivityUtil.goToActivity(this, ExampleActivity.class);
+                break;
             default:
                 break;
 
         }
     }
 
-    @OnClick(R.id.button_canvas)
-    public void onViewClicked() {
-    }
 }

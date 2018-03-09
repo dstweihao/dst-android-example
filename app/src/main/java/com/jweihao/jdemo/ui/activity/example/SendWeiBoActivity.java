@@ -3,6 +3,7 @@ package com.jweihao.jdemo.ui.activity.example;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +21,7 @@ import com.luck.picture.lib.permissions.RxPermissions;
 import com.luck.picture.lib.tools.PictureFileUtils;
 import com.wh.customcontrol.R;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -159,16 +161,16 @@ public class SendWeiBoActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             switch (requestCode) {
                 case PictureConfig.CHOOSE_REQUEST:
-                    //图片选择结果回调
+                    // 图片选择结果回调
                     mSelectLists = PictureSelector.obtainMultipleResult(data);
-                    //例如 LocalMedia 里面返回三种path
-                    //1.media.getPath(); 为原图path
-                    //2.media.getCutPath(); 为裁剪后path,需判断media.isCut();是否为true
-                    //3.media.getCompressPath();为压缩后path,需判断media.isCompressed()是否为true
-                    //如果裁剪并压缩了，已取压缩路径为准，因为是先裁剪后压缩的。
+                    // 例如 LocalMedia 里面返回三种path
+                    // 1.media.getPath(); 为原图path
+                    // 2.media.getCutPath();为裁剪后path，需判断media.isCut();是否为true
+                    // 3.media.getCompressPath();为压缩后path，需判断media.isCompressed();是否为true
+                    // 如果裁剪并压缩了，已取压缩路径为准，因为是先裁剪后压缩的
                     for (LocalMedia media : mSelectLists) {
                         Log.i("图片-----》", media.getPath());
                     }

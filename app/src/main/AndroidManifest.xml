@@ -94,7 +94,8 @@
             android:name="com.jweihao.jdemo.ui.activity.example.WeiBoDetailsActivity"
             android:theme="@style/TabLayoutActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity"></activity>
     </application>
 
 </manifest>
