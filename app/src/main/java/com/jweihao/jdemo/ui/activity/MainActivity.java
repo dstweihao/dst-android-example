@@ -12,6 +12,8 @@ import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
 import com.jweihao.jdemo.ui.activity.property.ViewStubActivity;
+import com.jweihao.jdemo.ui.activity.sdk.BaiduActivity;
+import com.jweihao.jdemo.ui.activity.sdk.SDKActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
@@ -81,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, ExampleActivity.class);
                 break;
             case R.id.button_sdk:
-                GoToActivityUtil.goToActivity(this, ExampleActivity.class);
+                GoToActivityUtil.goToActivity(this, SDKActivity.class);
                 break;
             default:
                 break;
