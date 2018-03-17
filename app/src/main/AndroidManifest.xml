@@ -38,6 +38,29 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <!-- 高德地图 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <application
         android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduApplication"
         android:allowBackup="true"
@@ -50,6 +73,11 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="8HluU86iUGtTQmuRz9vmlY4aKbqstu9a" />
+
+        <!-- 高德地图申请到的APIKey -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6adc5a7ef5e1fdd6fb5bfca7662c46a" />
 
         <activity android:name="com.jweihao.jdemo.ui.activity.MainActivity">
             <intent-filter>
@@ -122,7 +150,9 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.GaoDeActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"></activity>
     </application>
 
 </manifest>

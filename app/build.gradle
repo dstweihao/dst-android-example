@@ -44,4 +44,12 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
     //图片选择器
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.0'
+
+    //高德地图，搜索功能
+    compile 'com.amap.api:search:latest.integration'
+    //高德地图，定位功能
+    compile 'com.amap.api:location:latest.integration'
+    //高德地图，2D地图
+    compile 'com.amap.api:map2d:latest.integration'
+
 }

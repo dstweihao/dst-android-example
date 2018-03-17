@@ -59,6 +59,11 @@ public class BaiduActivity extends AppCompatActivity {
 //        mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
         mBaiduMap.setMyLocationEnabled(true);
         //运行时权限的获取
+        initPermissions();
+
+    }
+
+    private void initPermissions() {
         List<String> permissionList = new ArrayList<>();
         if (ContextCompat.checkSelfPermission(BaiduActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             permissionList.add(Manifest.permission.ACCESS_FINE_LOCATION);

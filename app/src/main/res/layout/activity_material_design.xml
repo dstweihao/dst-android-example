@@ -101,6 +101,13 @@
                 android:layout_height="wrap_content"
                 android:text="下拉刷新"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_collapsingtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="可折叠式标题栏CollapsingToolbarLayout"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
