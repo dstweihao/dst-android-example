@@ -152,7 +152,9 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.sdk.GaoDeActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"></activity>
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"
+            android:theme="@style/CollapsingToolbarActivityTheme" />
     </application>
 
 </manifest>

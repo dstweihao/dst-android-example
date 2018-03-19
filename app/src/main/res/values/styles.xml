@@ -11,6 +11,28 @@
     <style name="TabLayoutActivity" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        <!--&lt;!&ndash;透明的状态栏&ndash;&gt;-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--&lt;!&ndash;透明的导航栏&ndash;&gt;-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--&lt;!&ndash;设置应用布局时是否考虑系统窗口布局&ndash;&gt;-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--&lt;!&ndash;状态栏颜色指定为透明&ndash;&gt;-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <!--CollapsingToolbarActivity-->
+    <style name="CollapsingToolbarActivityTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--&lt;!&ndash;透明的状态栏&ndash;&gt;-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--&lt;!&ndash;透明的导航栏&ndash;&gt;-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--&lt;!&ndash;设置应用布局时是否考虑系统窗口布局&ndash;&gt;-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--状态栏颜色指定为透明-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
     </style>
 
     <style name="Toolbar" parent="AppTheme">
