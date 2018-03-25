@@ -70,7 +70,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, ClippingActivity.class);
                 break;
             case R.id.button_recycler:
-                GoToActivityUtil.goToActivity(this, RecyclerActivity.class);
+                GoToActivityUtil.goToActivity(this, RecyclerViewMenuActivity.class);
                 break;
             case R.id.button_transition:
                 GoToActivityUtil.goToActivity(this, TransitionAnimActivity.class);

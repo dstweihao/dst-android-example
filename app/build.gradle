@@ -52,4 +52,12 @@ dependencies {
     //高德地图，2D地图
     compile 'com.amap.api:map2d:latest.integration'
 
+    //RecyclerView多布局类型展示MultiType库
+    implementation 'me.drakeet.multitype:multitype:3.4.4'
+//    //MultiType内部应用了recyclerview-v7:xxxx，如果不想使用这个版本，可以使用exclude将它排除掉，再
+//    //自行引入你选择的版本，示例如下：
+//    compile('me.drakeet.multitype:multitype:3.4.4',{exclude group 'com.android.support'})
+//    compile 'com.android.support:recyclerview-v7:你选择的版本'
+
+
 }

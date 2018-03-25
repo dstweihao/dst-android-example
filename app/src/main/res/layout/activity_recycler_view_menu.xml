@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity">
+
+    <Button
+        android:id="@+id/button_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView基本使用方法"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/button_multitype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多布局类型MultiType库使用"
+        android:textAllCaps="false" />
+
+</LinearLayout>

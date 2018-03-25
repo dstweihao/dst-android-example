@@ -19,7 +19,7 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:title="天青色等烟雨">
+            app:title="青花瓷">
 
             <ImageView
                 android:id="@+id/fruit_image_view"
