@@ -162,6 +162,8 @@
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"
             android:theme="@style/CollapsingToolbarActivityTheme" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity"/>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity"/>
     </application>
 
 </manifest>
