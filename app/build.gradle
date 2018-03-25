@@ -45,12 +45,14 @@ dependencies {
     //图片选择器
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.0'
 
-    //高德地图，搜索功能
-    compile 'com.amap.api:search:latest.integration'
-    //高德地图，定位功能
-    compile 'com.amap.api:location:latest.integration'
-    //高德地图，2D地图
-    compile 'com.amap.api:map2d:latest.integration'
+    //高德地图，定位功能、2D地图、搜索功能
+//    compile 'com.amap.api:location:latest.integration'
+//    compile 'com.amap.api:map2d:latest.integration'
+//    compile 'com.amap.api:search:latest.integration'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+
 
     //RecyclerView多布局类型展示MultiType库
     implementation 'me.drakeet.multitype:multitype:3.4.4'
