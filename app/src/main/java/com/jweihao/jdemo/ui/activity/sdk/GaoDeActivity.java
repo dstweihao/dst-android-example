@@ -300,6 +300,7 @@ public class GaoDeActivity extends AppCompatActivity {
                             }
                             PoiItem poiItem = mList.get(position);
                             Toast.makeText(GaoDeActivity.this, "发送：" + poiItem.getTitle() + "  " + poiItem.getSnippet() + "  " + "纬度：" + poiItem.getLatLonPoint().getLatitude() + "  " + "经度：" + poiItem.getLatLonPoint().getLongitude(), Toast.LENGTH_SHORT).show();
+
                         }
                         break;
                     default:

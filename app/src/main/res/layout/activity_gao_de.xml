@@ -103,8 +103,7 @@
         android:background="@drawable/shape_cricle_white"
         android:src="@mipmap/location_gps_black"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
         android:id="@+id/iv_center_location"

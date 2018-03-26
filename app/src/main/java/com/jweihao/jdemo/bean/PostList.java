@@ -6,24 +6,17 @@ package com.jweihao.jdemo.bean;
 
 import java.util.List;
 
+import me.drakeet.multitype.Items;
+
 public class PostList {
     public final List<Post> mPostList;
-    public       int        currentPosition;
-
-    public PostList(List<Post> postList, int currentPosition) {
-        mPostList = postList;
-        this.currentPosition = currentPosition;
-    }
 
     public List<Post> getPostList() {
         return mPostList;
     }
 
-    public int getCurrentPosition() {
-        return currentPosition;
-    }
+    public PostList(List<Post> postList) {
 
-    public void setCurrentPosition(int currentPosition) {
-        this.currentPosition = currentPosition;
+        mPostList = postList;
     }
 }
