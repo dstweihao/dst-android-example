@@ -1,5 +1,5 @@
-# JDemo
-JDemo是一个示例Demo集合，其中包含自定义控件、CoordinatorLayout+AppBarLayout+TabLayout+ViewPager+RecyclerView、NestedScrollView+TabLayout+ViewPager+RecyclerView、Dagger2+MVP+RxJava+Retrofit+Glide等等，里面包含有：
+# Kawhi
+Kawhi是一个示例Demo集合，其中包含自定义控件、CoordinatorLayout+AppBarLayout+TabLayout+ViewPager+RecyclerView、NestedScrollView+TabLayout+ViewPager+RecyclerView、Dagger2+MVP+RxJava+Retrofit+Glide等等，里面包含有：
   * 三级菜单<br><br>
 ![](https://raw.githubusercontent.com/jweihao/CustomControl/master/imgs/1.png)
   * 广告条
