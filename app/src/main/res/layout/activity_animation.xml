@@ -9,12 +9,18 @@
 
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_view_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="视图动画" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_objectanimator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +28,9 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_property"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +38,9 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,12 +48,18 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_animatorset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="属性动画之AnimatorSet"
         android:textAllCaps="false" />
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,6 +67,9 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,12 +77,18 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_svg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Android 5.X SVG矢量动画机制"
         android:textAllCaps="false" />
-    <Button
+    <Button    android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
+
         android:id="@+id/button_effects"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

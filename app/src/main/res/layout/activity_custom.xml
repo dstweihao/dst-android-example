@@ -17,12 +17,18 @@
             android:orientation="vertical">
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_3menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="三级菜单" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_square"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -30,6 +36,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_framlayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,6 +47,9 @@
 
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,6 +57,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_text_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,6 +67,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_text_shine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +78,9 @@
 
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_jtoolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -67,6 +88,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_circle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,6 +98,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,6 +108,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_scroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,6 +118,9 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:layout_margin="@dimen/px_1"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:id="@+id/button_incident"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

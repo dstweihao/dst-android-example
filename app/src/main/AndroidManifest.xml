@@ -78,8 +78,8 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="eefd86202411dc1c5ad240a7d7153936" />
-        <service android:name="com.amap.api.location.APSService" />
 
+        <service android:name="com.amap.api.location.APSService" />
 
         <activity android:name="com.jweihao.jdemo.ui.activity.MainActivity">
             <intent-filter>
@@ -162,8 +162,11 @@
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"
             android:theme="@style/CollapsingToolbarActivityTheme" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity"/>
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang6Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.FileStoreActivity"></activity>
     </application>
 
 </manifest>

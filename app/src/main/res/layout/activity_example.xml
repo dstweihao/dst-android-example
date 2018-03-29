@@ -8,18 +8,27 @@
     tools:context="com.jweihao.jdemo.ui.activity.example.ExampleActivity">
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_jigsaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="拼图游戏" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_2048"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2048" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_weibo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

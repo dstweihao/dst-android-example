@@ -8,6 +8,9 @@
     tools:context="com.jweihao.jdemo.ui.activity.layout.LayoutActivity">
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_catvr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,6 +18,9 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_ntvr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

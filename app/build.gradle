@@ -52,8 +52,6 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.2'
 
-
-
     //RecyclerView多布局类型展示MultiType库
     implementation 'me.drakeet.multitype:multitype:3.4.4'
 //    //MultiType内部应用了recyclerview-v7:xxxx，如果不想使用这个版本，可以使用exclude将它排除掉，再

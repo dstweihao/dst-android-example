@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
 import com.jweihao.jdemo.ui.activity.canvas.CanvasActivity;
 import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
+import com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity;
 import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
@@ -52,12 +53,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
+    @OnClick({R.id.button_diyihang, R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
             R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas,
             R.id.button_sdk
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.button_diyihang:
+                GoToActivityUtil.goToActivity(this, DiYiHangActivity.class);
+                break;
             case R.id.button_custom:
                 GoToActivityUtil.goToActivity(this, CustomActivity.class);
                 break;

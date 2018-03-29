@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#63AC26</color>
-    <color name="colorPrimaryDark">#63AC26</color>
-    <color name="colorAccent">#63AC26</color>
-
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+<!--#63AC26-->
     <color name="layout_bg">#dfdfdf</color>
     <color name="bar_grey">#393a3e</color>
     <color name="color_f6">#f6f6f6</color>

@@ -9,6 +9,9 @@
     tools:context="com.jweihao.jdemo.ui.activity.property.ViewStubActivity">
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +19,9 @@
         android:textAllCaps="false" />
 
     <Button
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/button_inflate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
