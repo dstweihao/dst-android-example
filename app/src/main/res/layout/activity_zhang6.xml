@@ -32,6 +32,28 @@
             android:textAllCaps="false"
             android:textColor="@color/black" />
 
+        <Button
+
+            android:id="@+id/button_sqlite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="SQLite数据库存储"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+
+            android:id="@+id/button_litepal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="使用LitePal操作数据库"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
     </LinearLayout>
 
 </LinearLayout>

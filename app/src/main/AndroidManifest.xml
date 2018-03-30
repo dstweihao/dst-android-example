@@ -166,7 +166,10 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang6Activity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.FileStoreActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.FileStoreActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SPActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SQLiteActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.LitePalActivity"></activity>
     </application>
 
 </manifest>
