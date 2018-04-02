@@ -66,6 +66,12 @@ public class NotificatActivity extends AppCompatActivity {
 //                .setLights(Color.GREEN, 1000, 1000)
                 //设置默认的通知效果
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
+//                //设置封装长文字信息（这两方法只会显示一种）
+//                .setStyle(new NotificationCompat.BigTextStyle().bigText("Learn how to build notifications,send and sync data,and use voice actions.Get the official Android IED and developer tools to build apps for Android ."))
+                //设置在通知里显示一张大图
+                .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.mipmap.meichangsu)))
+                //设置通知的重要程度，这里设置最高。
+                .setPriority(NotificationCompat.PRIORITY_MAX)
                 .build();
 
         manager.notify(1, notification);
