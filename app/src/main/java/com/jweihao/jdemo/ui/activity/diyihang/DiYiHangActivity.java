@@ -33,6 +33,7 @@ public class DiYiHangActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, Zhang6Activity.class);
                 break;
             case R.id.button_7:
+                GoToActivityUtil.goToActivity(this,zhang7Activity.class);
                 break;
             case R.id.button_8:
                 GoToActivityUtil.goToActivity(this, Zhang8Activity.class);
