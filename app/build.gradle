@@ -59,7 +59,6 @@ dependencies {
 //    compile('me.drakeet.multitype:multitype:3.4.4',{exclude group 'com.android.support'})
 //    compile 'com.android.support:recyclerview-v7:你选择的版本'
 
-
     //LitePal数据库
     implementation 'org.litepal.android:core:1.6.1'
 

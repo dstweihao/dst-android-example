@@ -31,6 +31,14 @@
             android:background="@color/white"
             android:text="第7章 内容提供器"
             android:textColor="@color/black" />
+        <Button
 
+            android:id="@+id/button_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="第8章 运用手机多媒体"
+            android:textColor="@color/black" />
     </LinearLayout>
 </LinearLayout>

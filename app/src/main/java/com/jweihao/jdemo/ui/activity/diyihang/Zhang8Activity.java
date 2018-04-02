@@ -12,30 +12,27 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class DiYiHangActivity extends AppCompatActivity {
+public class Zhang8Activity extends AppCompatActivity {
 
-    @BindView(R.id.button_6)
-    Button mButton6;
-    @BindView(R.id.button_7)
-    Button mButton7;
+    @BindView(R.id.button_notification)
+    Button mButtonNotification;
+    @BindView(R.id.button_camera)
+    Button mButtonCamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_di_yi_hang);
+        setContentView(R.layout.activity_zhang8);
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_6, R.id.button_7, R.id.button_8})
+    @OnClick({R.id.button_notification, R.id.button_camera})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.button_6:
-                GoToActivityUtil.goToActivity(this, Zhang6Activity.class);
+            case R.id.button_notification:
+                GoToActivityUtil.goToActivity(this, NotificatActivity.class);
                 break;
-            case R.id.button_7:
-                break;
-            case R.id.button_8:
-                GoToActivityUtil.goToActivity(this, Zhang8Activity.class);
+            case R.id.button_camera:
                 break;
             default:
                 break;
