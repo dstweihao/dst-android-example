@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="27" />
+
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -171,7 +172,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.LitePalActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang8Activity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatDetailsActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatDetailsActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.CameraActivity"></activity>
     </application>
 
 </manifest>

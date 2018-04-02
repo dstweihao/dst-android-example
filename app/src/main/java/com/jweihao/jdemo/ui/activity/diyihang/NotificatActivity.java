@@ -70,7 +70,9 @@ public class NotificatActivity extends AppCompatActivity {
 //                .setStyle(new NotificationCompat.BigTextStyle().bigText("Learn how to build notifications,send and sync data,and use voice actions.Get the official Android IED and developer tools to build apps for Android ."))
                 //设置在通知里显示一张大图
                 .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.mipmap.meichangsu)))
-                //设置通知的重要程度，这里设置最高。
+                //设置通知的重要程度，这里设置最高，此时，通知不是在系统状态栏显示一个小图标了，而是弹出一个横幅。
+                //并附带了通知的详细内容，表示这是一条非常重要的通知。不管用户现在是在玩游戏还是看电影，这条通知都会显示在最上方，以此引起用户的注意。
+                //当然，使用这类通知一定要小心，确保你的通知内容的确是至关重要的，不然如果让用户产生反感的话，很有可能会导致我们的应用程序被卸载。
                 .setPriority(NotificationCompat.PRIORITY_MAX)
                 .build();
 
