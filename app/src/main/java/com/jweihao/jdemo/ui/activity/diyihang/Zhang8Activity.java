@@ -26,7 +26,7 @@ public class Zhang8Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_notification, R.id.button_camera})
+    @OnClick({R.id.button_notification, R.id.button_camera, R.id.button_voice, R.id.button_video})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_notification:
@@ -35,8 +35,15 @@ public class Zhang8Activity extends AppCompatActivity {
             case R.id.button_camera:
                 GoToActivityUtil.goToActivity(this, CameraActivity.class);
                 break;
+            case R.id.button_voice:
+                GoToActivityUtil.goToActivity(this, VoiceActivity.class);
+                break;
+            case R.id.button_video:
+                GoToActivityUtil.goToActivity(this, VideoActivity.class);
+                break;
             default:
                 break;
         }
     }
+
 }

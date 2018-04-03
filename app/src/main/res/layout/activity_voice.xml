@@ -5,42 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.diyihang.Zhang8Activity">
+    tools:context="com.jweihao.jdemo.ui.activity.diyihang.VoiceActivity">
 
     <Button
-        android:id="@+id/button_notification"
+        android:id="@+id/play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="Notification"
+        android:text="Play"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/button_camera"
+        android:id="@+id/pause"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="调用摄像头和相册"
+        android:text="Pause"
+        android:textAllCaps="false"
         android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/button_voice"
+        android:id="@+id/stop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="播放音频"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/button_video"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:text="播放视频"
+        android:text="Stop"
+        android:textAllCaps="false"
         android:textColor="@color/black" />
 </LinearLayout>
