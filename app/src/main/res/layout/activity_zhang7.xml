@@ -24,5 +24,13 @@
         android:background="@color/white"
         android:text="访问其他程序中的数据"
         android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/button_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="读取系统联系人"
+        android:textColor="@color/black"/>
 
 </LinearLayout>

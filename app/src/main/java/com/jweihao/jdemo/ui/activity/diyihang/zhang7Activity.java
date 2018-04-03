@@ -14,11 +14,6 @@ import butterknife.OnClick;
 
 public class zhang7Activity extends AppCompatActivity {
 
-    @BindView(R.id.button_permission)
-    Button mButtonPermission;
-    @BindView(R.id.button_otherdata)
-    Button mButtonOtherdata;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +21,7 @@ public class zhang7Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_permission, R.id.button_otherdata})
+    @OnClick({R.id.button_permission, R.id.button_otherdata, R.id.button_contacts})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_permission:
@@ -34,8 +29,12 @@ public class zhang7Activity extends AppCompatActivity {
                 break;
             case R.id.button_otherdata:
                 break;
+            case R.id.button_contacts:
+                GoToActivityUtil.goToActivity(this, ContactsActivity.class);
+                break;
             default:
                 break;
         }
     }
+
 }
