@@ -33,6 +33,7 @@ public class Zhang8Activity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, NotificatActivity.class);
                 break;
             case R.id.button_camera:
+                GoToActivityUtil.goToActivity(this, CameraActivity.class);
                 break;
             default:
                 break;

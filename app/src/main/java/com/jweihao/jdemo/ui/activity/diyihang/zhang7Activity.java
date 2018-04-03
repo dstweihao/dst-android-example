@@ -34,6 +34,8 @@ public class zhang7Activity extends AppCompatActivity {
                 break;
             case R.id.button_otherdata:
                 break;
+            default:
+                break;
         }
     }
 }
