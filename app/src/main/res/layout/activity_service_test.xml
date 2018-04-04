@@ -28,5 +28,24 @@
         android:text="Stop Service"
         android:textAllCaps="false"
         android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Bind Service"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Unbind Service"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
