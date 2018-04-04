@@ -13,7 +13,6 @@ import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
 import com.jweihao.jdemo.ui.activity.property.ViewStubActivity;
-import com.jweihao.jdemo.ui.activity.sdk.BaiduActivity;
 import com.jweihao.jdemo.ui.activity.sdk.SDKActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
@@ -54,13 +53,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.button_diyihang, R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
-            R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas,
+            R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas, R.id.button_hero, R.id.button_art,
             R.id.button_sdk
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            //《第一行代码》
             case R.id.button_diyihang:
                 GoToActivityUtil.goToActivity(this, DiYiHangActivity.class);
+                break;
+            //《Android群英传》
+            case R.id.button_hero:
+                break;
+            //《Android开发艺术探索》
+            case R.id.button_art:
                 break;
             case R.id.button_custom:
                 GoToActivityUtil.goToActivity(this, CustomActivity.class);
@@ -94,5 +100,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
 }

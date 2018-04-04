@@ -19,8 +19,29 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/px_1"
             android:background="@color/white"
-            android:text="第一行代码"
+            android:text="《第一行代码》"
             android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_hero"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="《Android群英传》"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_art"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="《Android开发艺术探索》"
+            android:textColor="@color/black" />
+
         <Button
 
             android:id="@+id/button_custom"
