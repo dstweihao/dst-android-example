@@ -18,6 +18,10 @@ public class DiYiHangActivity extends AppCompatActivity {
     Button mButton6;
     @BindView(R.id.button_7)
     Button mButton7;
+    @BindView(R.id.button_8)
+    Button mButton8;
+    @BindView(R.id.button_10)
+    Button mButton10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +30,20 @@ public class DiYiHangActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_6, R.id.button_7, R.id.button_8})
+    @OnClick({R.id.button_6, R.id.button_7, R.id.button_8, R.id.button_10})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_6:
                 GoToActivityUtil.goToActivity(this, Zhang6Activity.class);
                 break;
             case R.id.button_7:
-                GoToActivityUtil.goToActivity(this,zhang7Activity.class);
+                GoToActivityUtil.goToActivity(this, zhang7Activity.class);
                 break;
             case R.id.button_8:
                 GoToActivityUtil.goToActivity(this, Zhang8Activity.class);
                 break;
+            case R.id.button_10:
+                GoToActivityUtil.goToActivity(this, Zhang10Activity.class);
             default:
                 break;
         }

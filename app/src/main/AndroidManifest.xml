@@ -190,8 +190,10 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.PermissionActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VoiceActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VideoActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity"></activity>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.MyProviderActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.MyProviderActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang10Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.UpdateUIActivity"></activity>
     </application>
 
 </manifest>
