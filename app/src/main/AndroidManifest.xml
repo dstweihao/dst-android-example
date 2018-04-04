@@ -193,7 +193,8 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.MyProviderActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang10Activity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.UpdateUIActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.UpdateUIActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.AsyncTaskActivity"></activity>
     </application>
 
 </manifest>

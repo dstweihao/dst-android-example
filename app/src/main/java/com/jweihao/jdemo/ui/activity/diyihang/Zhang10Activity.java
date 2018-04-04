@@ -19,16 +19,23 @@ public class Zhang10Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_ui, R.id.button_service})
+    @OnClick({R.id.button_ui, R.id.button_async, R.id.button_service})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_ui:
                 GoToActivityUtil.goToActivity(this, UpdateUIActivity.class);
+                break;
+            case R.id.button_async:
+                GoToActivityUtil.goToActivity(this, AsyncTaskActivity.class);
                 break;
             case R.id.button_service:
                 break;
             default:
                 break;
         }
+    }
+
+    @OnClick(R.id.button_async)
+    public void onViewClicked() {
     }
 }
