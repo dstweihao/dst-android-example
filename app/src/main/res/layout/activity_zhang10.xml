@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="Service"
+        android:text="Service的基本用法"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 

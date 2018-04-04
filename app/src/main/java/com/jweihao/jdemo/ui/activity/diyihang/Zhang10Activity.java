@@ -29,6 +29,7 @@ public class Zhang10Activity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, AsyncTaskActivity.class);
                 break;
             case R.id.button_service:
+                GoToActivityUtil.goToActivity(this, ServiceTestActivity.class);
                 break;
             default:
                 break;
