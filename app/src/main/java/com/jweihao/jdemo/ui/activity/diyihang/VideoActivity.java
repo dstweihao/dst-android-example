@@ -84,6 +84,8 @@ public class VideoActivity extends AppCompatActivity {
                     mVideoView.resume();
                 }
                 break;
+            default:
+                break;
         }
     }
 

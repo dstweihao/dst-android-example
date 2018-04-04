@@ -32,5 +32,13 @@
         android:background="@color/white"
         android:text="读取系统联系人"
         android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/button_myprovider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="创建自己的内容提供器"
+        android:textColor="@color/black"/>
 
 </LinearLayout>

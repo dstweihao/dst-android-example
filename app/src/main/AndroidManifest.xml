@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.wh.customcontrol"
-          android:versionCode="1"
-          android:versionName="1.0">
+    package="com.wh.customcontrol"
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="27"/>
+        android:targetSdkVersion="27" />
 
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- 百度地图 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!-- 高德地图 -->
     <!-- 用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!-- 用于访问GPS定位 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <!-- 用于访问网络，网络定位需要上网 -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- 用于读取手机当前的状态 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 用于写入缓存数据到扩展存储卡 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 用于申请调用A-GPS模块 -->
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <!-- 用于申请获取蓝牙信息进行室内定位 -->
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduApplication"
@@ -78,120 +78,120 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_path"/>
+                android:resource="@xml/file_path" />
         </provider>
 
         <!-- 百度地图申请到的APIKey -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="8HluU86iUGtTQmuRz9vmlY4aKbqstu9a"/>
+            android:value="8HluU86iUGtTQmuRz9vmlY4aKbqstu9a" />
 
         <!-- 高德地图申请到的APIKey -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="eefd86202411dc1c5ad240a7d7153936"/>
+            android:value="eefd86202411dc1c5ad240a7d7153936" />
 
-        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.amap.api.location.APSService" />
 
         <activity android:name="com.jweihao.jdemo.ui.activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <!-- 百度地图,注册一个LBS SDK 中的服务 -->
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"/>
+            android:process=":remote" />
 
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.Level3MenuActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ColorTextActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragFramLayoutActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragSquareActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.MeasureActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ShineTextViewActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CustomActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.VolumeActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ReboundScrollActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ViewActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.layout.LayoutActivity"/>
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.Level3MenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ColorTextActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragFramLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.DragSquareActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.MeasureActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ShineTextViewActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CustomActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.VolumeActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ReboundScrollActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.custom.ViewActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.layout.LayoutActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.layout.NTVRActivity"
-            android:theme="@style/TabLayoutActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimationActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ObjectAnimatorActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PropertyActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ValueAnimatorActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimatorSetActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.LayoutAnimationActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.CustomAnimationActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.SVGActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimEffectsActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.MenuActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.TimerActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PullDownActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.PaletteActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.ShadowActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.TintingActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.ClippingActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionAnimActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionsToActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RippleActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.CircularRevealActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity"/>
+            android:theme="@style/TabLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ObjectAnimatorActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PropertyActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.ValueAnimatorActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimatorSetActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.LayoutAnimationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.CustomAnimationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.SVGActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimEffectsActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.MenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.TimerActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.animation.PullDownActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.PaletteActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ShadowActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.TintingActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ClippingActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionAnimActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.TransitionsToActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RippleActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.CircularRevealActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.ViewChangesAnimatorActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity"
-            android:theme="@style/Toolbar"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.canvas.CanvasActivity"/>
+            android:theme="@style/Toolbar" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.canvas.CanvasActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.WeiBoActivity"
-            android:theme="@style/TabLayoutActivity"/>
+            android:theme="@style/TabLayoutActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.WeiBoDetailsActivity"
-            android:theme="@style/TabLayoutActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity"/>
+            android:theme="@style/TabLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.sdk.GaoDeActivity"
-            android:theme="@style/TabLayoutActivity"/>
+            android:theme="@style/TabLayoutActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.sdk.SearchActivity"
-            android:theme="@style/TabLayoutActivity"/>
+            android:theme="@style/TabLayoutActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"
-            android:theme="@style/CollapsingToolbarActivityTheme"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang6Activity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.FileStoreActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SPActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SQLiteActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.LitePalActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang8Activity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatDetailsActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.CameraActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.zhang7Activity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.PermissionActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VoiceActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VideoActivity"/>
-        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity">
-        </activity>
+            android:theme="@style/CollapsingToolbarActivityTheme" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang6Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.FileStoreActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SPActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.SQLiteActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.LitePalActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.Zhang8Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.NotificatDetailsActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.CameraActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.zhang7Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.PermissionActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VoiceActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.VideoActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.MyProviderActivity"></activity>
     </application>
 
 </manifest>
