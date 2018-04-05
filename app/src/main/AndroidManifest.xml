@@ -199,11 +199,18 @@
         <service
             android:name="com.jweihao.jdemo.service.MyService"
             android:enabled="true"
-            android:exported="true">
-        </service>
+            android:exported="true"/>
+
 
         <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.ServiceTestActivity">
         </activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.diyihang.IntentServiceTestActivity">
+        </activity>
+
+        <service
+            android:name="com.jweihao.jdemo.service.MyIntentService"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>

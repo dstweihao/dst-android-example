@@ -19,7 +19,7 @@ public class Zhang10Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_ui, R.id.button_async, R.id.button_service})
+    @OnClick({R.id.button_ui, R.id.button_async, R.id.button_service, R.id.button_intent_service})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_ui:
@@ -31,12 +31,11 @@ public class Zhang10Activity extends AppCompatActivity {
             case R.id.button_service:
                 GoToActivityUtil.goToActivity(this, ServiceTestActivity.class);
                 break;
+            case R.id.button_intent_service:
+                GoToActivityUtil.goToActivity(this, IntentServiceTestActivity.class);
+                break;
             default:
                 break;
         }
-    }
-
-    @OnClick(R.id.button_async)
-    public void onViewClicked() {
     }
 }

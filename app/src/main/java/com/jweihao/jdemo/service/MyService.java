@@ -57,6 +57,17 @@ public class MyService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d("MyService", "onStartCommand executed");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //处理具体的逻辑
+                //这种Service一旦启动之后，就会处于运行状态，必须调用stopService（）或者
+                //stopSelf（）方法才能让Service停止下来，所以如果想要实现让一个Service在执行完毕
+                //后自动停止的功能，可以这样写：
+                stopSelf();
+            }
+        }).start();
+
         return super.onStartCommand(intent, flags, startId);
     }
 
