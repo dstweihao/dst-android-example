@@ -5,59 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.diyihang.Zhang10Activity">
+    tools:context="com.jweihao.jdemo.ui.activity.diyihang.ServiceBestPracticeActivity">
 
 
     <Button
-        android:id="@+id/button_ui"
+        android:id="@+id/start_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="在子线程中更新UI"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/button_async"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:text="使用AsyncTask"
+        android:text="Start Download"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
     <Button
-
-        android:id="@+id/button_service"
+        android:id="@+id/pause_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="Service的基本用法"
+        android:text="Pause Download"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
     <Button
-
-        android:id="@+id/button_intent_service"
+        android:id="@+id/cancel_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="使用IntentService"
+        android:text="Cancel Download"
         android:textAllCaps="false"
         android:textColor="@color/black" />
-    <Button
-
-        android:id="@+id/button_practice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:text="Service的最佳实践——完整版的下载示例"
-        android:textAllCaps="false"
-        android:textColor="@color/black" />
-
 
 </LinearLayout>

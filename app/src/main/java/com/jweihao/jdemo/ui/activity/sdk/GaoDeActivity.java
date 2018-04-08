@@ -49,6 +49,11 @@ import com.wh.customcontrol.R;
 
 import java.util.ArrayList;
 import java.util.List;
+    /*
+    * 该Demo收集于xiaofuchen
+    * github地址为:https://github.com/xiaofuchen/WeixinLocation
+    *
+    * */
 
 public class GaoDeActivity extends AppCompatActivity {
 
