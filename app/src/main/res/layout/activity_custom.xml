@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.CustomActivity">
-
+    tools:context="com.jweihao.jdemo.ui.activity.book.hero.custom.CustomActivity">
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

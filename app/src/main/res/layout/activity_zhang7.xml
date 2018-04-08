@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.diyihang.zhang7Activity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.zhang7Activity">
 
     <Button
         android:id="@+id/button_permission"

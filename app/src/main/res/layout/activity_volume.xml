@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.VolumeActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.hero.custom.VolumeActivity">
 
     <com.jweihao.jdemo.view.VolumeView
         android:layout_width="match_parent"

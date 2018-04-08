@@ -6,9 +6,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
+import com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity;
 import com.jweihao.jdemo.ui.activity.canvas.CanvasActivity;
-import com.jweihao.jdemo.ui.activity.custom.CustomActivity;
-import com.jweihao.jdemo.ui.activity.diyihang.DiYiHangActivity;
+import com.jweihao.jdemo.ui.activity.book.hero.custom.CustomActivity;
+import com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity;
 import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
@@ -64,12 +65,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             //《Android群英传》
             case R.id.button_hero:
+                GoToActivityUtil.goToActivity(this, HeroMenuActivity.class);
                 break;
             //《Android开发艺术探索》
             case R.id.button_art:
                 break;
             case R.id.button_custom:
-                GoToActivityUtil.goToActivity(this, CustomActivity.class);
+//                GoToActivityUtil.goToActivity(this, .class);
                 break;
             case R.id.button_http:
                 break;
@@ -77,10 +79,10 @@ public class MainActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, LayoutActivity.class);
                 break;
             case R.id.button_animation:
-                GoToActivityUtil.goToActivity(this, AnimationActivity.class);
+//                GoToActivityUtil.goToActivity(this, AnimationActivity.class);
                 break;
             case R.id.button_canvas:
-                GoToActivityUtil.goToActivity(this, CanvasActivity.class);
+//                GoToActivityUtil.goToActivity(this, CanvasActivity.class);
                 break;
             case R.id.button_md:
                 GoToActivityUtil.goToActivity(this, MaterialDesignActivity.class);
@@ -89,11 +91,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_property:
                 GoToActivityUtil.goToActivity(this, ViewStubActivity.class);
                 break;
-            case R.id.button_example:
-                GoToActivityUtil.goToActivity(this, ExampleActivity.class);
-                break;
+
             case R.id.button_sdk:
                 GoToActivityUtil.goToActivity(this, SDKActivity.class);
+                break;
+            case R.id.button_example:
+                GoToActivityUtil.goToActivity(this, ExampleActivity.class);
                 break;
             default:
                 break;

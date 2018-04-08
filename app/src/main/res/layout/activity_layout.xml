@@ -12,7 +12,7 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:id="@+id/button_catvr"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CoordinatorLayout + AppBarLayout + TabLayout + ViewPager + RecyclerView"
         android:textAllCaps="false" />
@@ -22,7 +22,7 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:id="@+id/button_ntvr"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NestedScrollView + TabLayout + ViewPager + RecyclerView"
         android:textAllCaps="false" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.ReboundScrollActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.hero.custom.ReboundScrollActivity">
 
     <com.jweihao.jdemo.view.ReboundScrollView
         android:layout_width="match_parent"

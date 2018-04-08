@@ -10,7 +10,7 @@ import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.jweihao.jdemo.ui.activity.diyihang.ServiceTestActivity;
+import com.jweihao.jdemo.ui.activity.book.diyihang.ServiceTestActivity;
 import com.wh.customcontrol.R;
 
 public class MyService extends Service {

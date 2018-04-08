@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.CircleProgressActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.hero.custom.CircleProgressActivity">
 
     <com.jweihao.jdemo.view.CircleProgressView
         android:id="@+id/circleprogress"

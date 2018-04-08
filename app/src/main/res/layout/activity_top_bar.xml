@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.custom.JToolBarActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.hero.custom.JToolBarActivity">
 
     <com.jweihao.JToolBar
         android:id="@+id/jtoolbar"

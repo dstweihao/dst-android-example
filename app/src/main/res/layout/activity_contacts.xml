@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.diyihang.ContactsActivity">
+    tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.ContactsActivity">
 
     <ListView
         android:id="@+id/contacts_view"

@@ -14,10 +14,7 @@ import butterknife.OnClick;
 
 public class ExampleActivity extends AppCompatActivity {
 
-    @BindView(R.id.button_jigsaw)
-    Button mButtonJigsaw;
-    @BindView(R.id.button_2048)
-    Button mButton2048;
+
     @BindView(R.id.button_weibo)
     Button mButtonWeibo;
 
@@ -28,15 +25,15 @@ public class ExampleActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_jigsaw, R.id.button_2048,R.id.button_weibo})
+    @OnClick({R.id.button_weibo})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.button_jigsaw:
-                GoToActivityUtil.goToActivity(this, JigsawActivity.class);
-                break;
-            case R.id.button_2048:
-                GoToActivityUtil.goToActivity(this, Game2048Activity.class);
-                break;
+//            case R.id.button_jigsaw:
+//                GoToActivityUtil.goToActivity(this, JigsawActivity.class);
+//                break;
+//            case R.id.button_2048:
+//                GoToActivityUtil.goToActivity(this, Game2048Activity.class);
+//                break;
             case R.id.button_weibo:
                 GoToActivityUtil.goToActivity(this, WeiBoActivity.class);
                 break;
