@@ -7,25 +7,43 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.layout.LayoutActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="布局框架"
+                android:textColor="#F2F2F2"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
     <Button
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:textColor="@color/black"
         android:id="@+id/button_catvr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CoordinatorLayout + AppBarLayout + TabLayout + ViewPager + RecyclerView"
-        android:textAllCaps="false" />
-
-    <Button
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:textColor="@color/black"
+        android:text="CoordinatorLayout + AppBarLayout + TabLayout + ViewPager + RecyclerView"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
         android:id="@+id/button_ntvr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
         android:text="NestedScrollView + TabLayout + ViewPager + RecyclerView"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 
 
 </LinearLayout>

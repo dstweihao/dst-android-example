@@ -10,7 +10,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="TabLayoutActivity" parent="AppTheme">
+    <style name="NoTitleActivity" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <!--&lt;!&ndash;透明的状态栏&ndash;&gt;-->

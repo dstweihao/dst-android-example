@@ -21,12 +21,12 @@
                 android:layout_centerInParent="true"
                 android:text="KL2"
                 android:textColor="#F2F2F2"
-                android:textSize="18dp"
-                android:textStyle="italic" />
+                android:textSize="20dp" />
         </RelativeLayout>
 
 
     </android.support.v7.widget.Toolbar>
+
     <com.jweihao.jdemo.view.JudgeNestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -74,16 +74,16 @@
                 android:id="@+id/tablayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabTextColor="@color/title2"
                 android:background="@color/white"
                 app:tabIndicatorColor="@color/colorPrimary"
                 app:tabSelectedTextColor="@color/colorPrimary"
-                app:tabTextAppearance="@style/TabLayoutTextStyle" />
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/title2" />
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
         </LinearLayout>
     </com.jweihao.jdemo.view.JudgeNestedScrollView>
@@ -95,11 +95,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar_name"
         android:background="#fff"
-        app:tabTextColor="@color/title2"
         android:visibility="gone"
         app:tabIndicatorColor="@color/colorPrimary"
         app:tabSelectedTextColor="@color/colorPrimary"
-        app:tabTextAppearance="@style/TabLayoutTextStyle" />
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/title2" />
 
 
 </RelativeLayout>

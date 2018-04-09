@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context="com.jweihao.jdemo.ui.activity.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="KL2"
+                android:textColor="#F2F2F2"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
 
@@ -20,7 +38,7 @@
             android:layout_margin="@dimen/px_1"
             android:background="@color/white"
             android:text="《第一行代码》"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_hero"
@@ -30,7 +48,7 @@
             android:background="@color/white"
             android:text="《Android群英传》"
             android:textAllCaps="false"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_art"
@@ -40,7 +58,7 @@
             android:background="@color/white"
             android:text="《Android开发艺术探索》"
             android:textAllCaps="false"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
 
@@ -51,7 +69,7 @@
             android:background="@color/white"
             android:text="自定义控件"
             android:textColor="@color/black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
 
         <Button
@@ -63,7 +81,7 @@
             android:background="@color/white"
             android:text="网络框架"
             android:textAllCaps="false"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_layout"
@@ -73,7 +91,7 @@
             android:background="@color/white"
             android:text="布局框架"
             android:textAllCaps="false"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
 
         <Button
@@ -85,7 +103,7 @@
             android:text="动画"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/button_canvas"
@@ -96,7 +114,7 @@
             android:text="绘图"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
 
         <Button
@@ -108,7 +126,7 @@
             android:text="Material Design"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/button_property"
@@ -119,7 +137,7 @@
             android:text="Android性能优化"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/button_sdk"
@@ -128,7 +146,7 @@
             android:layout_margin="@dimen/px_1"
             android:background="@color/white"
             android:text="sdk"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_example"
@@ -138,7 +156,7 @@
             android:background="@color/white"
             android:text="实例"
             android:textAllCaps="false"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <!--<Button-->
         <!--android:id="@+id/button_text_shine"-->

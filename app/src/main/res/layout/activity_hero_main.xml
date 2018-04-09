@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +7,25 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Android群英传"
+                android:textColor="#F2F2F2"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <Button
         android:id="@+id/button_hero3"
@@ -17,7 +35,8 @@
         android:background="@color/white"
         android:text="第3章 Android控件架构与自定义控件详解"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/button_hero6"
         android:layout_width="match_parent"
@@ -26,7 +45,7 @@
         android:background="@color/white"
         android:text="第6章 Android绘图机制与处理技巧"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/button_hero7"
@@ -36,7 +55,8 @@
         android:background="@color/white"
         android:text="第7章 Android动画机制与使用技巧"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/button_hero10"
         android:layout_width="match_parent"
@@ -45,7 +65,7 @@
         android:background="@color/white"
         android:text="第10章 Android性能优化"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/button_hero12"
@@ -55,7 +75,8 @@
         android:background="@color/white"
         android:text="第12章 Android 5.X新特性详解"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/button_hero13"
         android:layout_width="match_parent"
@@ -64,5 +85,5 @@
         android:background="@color/white"
         android:text="第13章 Android 实例提高"
         android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
 </LinearLayout>

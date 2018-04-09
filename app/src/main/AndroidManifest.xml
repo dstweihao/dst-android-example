@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="27" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -90,10 +91,10 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="eefd86202411dc1c5ad240a7d7153936" />
-
         <service android:name="com.amap.api.location.APSService" />
-
-        <activity android:name="com.jweihao.jdemo.ui.activity.MainActivity">
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.MainActivity"
+            android:theme="@style/NoTitleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -132,10 +133,12 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.custom.VolumeActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.custom.ReboundScrollActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.custom.ViewActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.layout.LayoutActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.layout.LayoutActivity"
+            android:theme="@style/NoTitleActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.layout.NTVRActivity"
-            android:theme="@style/TabLayoutActivity" />
+            android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.AnimationActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.ViewAnimationActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.animation.ObjectAnimatorActivity" />
@@ -164,7 +167,9 @@
             android:name="com.jweihao.jdemo.ui.activity.md.ToolbarActivity"
             android:theme="@style/Toolbar" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.NotificationActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.example.ExampleActivity"
+            android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.JigsawActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.Game2048Activity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.property.ViewStubActivity" />
@@ -172,19 +177,23 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.md.SwipeRefreshLayoutActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.SendWeiBoActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.sdk.BaiduActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.sdk.SDKActivity"
+            android:theme="@style/NoTitleActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.sdk.GaoDeActivity"
-            android:theme="@style/TabLayoutActivity" />
+            android:theme="@style/NoTitleActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.sdk.SearchActivity"
-            android:theme="@style/TabLayoutActivity" />
+            android:theme="@style/NoTitleActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.md.CollapsingToolbarActivity"
             android:theme="@style/CollapsingToolbarActivityTheme" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMenuActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.md.RecyclerViewMultiTypeActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity"
+            android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.Zhang6Activity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.FileStoreActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.SPActivity" />
@@ -222,14 +231,16 @@
             android:exported="true" />
 
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.ServiceBestPracticeActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity" />
+        <activity
+            android:name="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity"
+            android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.layout.CATVRActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.TwitterActivity"
-            android:theme="@style/TabLayoutActivity" />
+            android:theme="@style/NoTitleActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.TwitterDetailsActivity"
-            android:theme="@style/TabLayoutActivity" />
+            android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.PayActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.GlassActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.HTMLActivity"></activity>

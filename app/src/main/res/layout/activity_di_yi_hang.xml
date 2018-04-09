@@ -7,6 +7,23 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="第一行代码"
+                android:textColor="#F2F2F2"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +48,7 @@
             android:background="@color/white"
             android:text="第7章 内容提供器"
             android:textColor="@color/black" />
+
         <Button
 
             android:id="@+id/button_8"
@@ -40,6 +58,7 @@
             android:background="@color/white"
             android:text="第8章 运用手机多媒体"
             android:textColor="@color/black" />
+
         <Button
 
             android:id="@+id/button_10"
