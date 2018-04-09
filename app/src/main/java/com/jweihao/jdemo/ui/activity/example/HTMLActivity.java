@@ -9,8 +9,13 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.wh.customcontrol.R;
+
+        /*
+        *   demo来自：李济洲
+        *   博客位置：https://blog.csdn.net/leejizhou/article/details/50894531
+        *
+        * */
 
 public class HTMLActivity extends AppCompatActivity {
 
