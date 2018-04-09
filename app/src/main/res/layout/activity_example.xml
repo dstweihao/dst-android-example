@@ -8,12 +8,23 @@
     tools:context="com.jweihao.jdemo.ui.activity.example.ExampleActivity">
 
     <Button
+        android:id="@+id/button_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Android 仿微博发布动态QQ空间发布说说"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
         android:id="@+id/button_pay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="H5调起微信app和支付宝app进行支付"
+        android:text="H5调起微信App和支付宝App进行支付"
+        android:textAllCaps="false"
         android:textColor="@color/black" />
 
     <Button
@@ -24,23 +35,26 @@
         android:background="@color/white"
         android:text="仿慕课网个人界面的毛玻璃效果"
         android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_html"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Android与HTML+JS交互入门"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/button_sling"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="实现从浏览器html页面调起xxx项目app"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/button_twitter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:text="Android 仿微博发布动态QQ空间发布说说"
+        android:text="实现从浏览器HTML页面调起xxx项目App"
         android:textAllCaps="false"
         android:textColor="@color/black" />
+
 
 </LinearLayout>

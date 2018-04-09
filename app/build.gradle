@@ -72,5 +72,3 @@ dependencies {
 //    implementation'jp.wasabeef:glide-transformations:2.0.1'
     implementation 'jp.wasabeef:picasso-transformations:2.2.1'
 }
-
-
