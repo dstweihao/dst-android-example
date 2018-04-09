@@ -35,7 +35,7 @@ public class ExampleActivity extends AppCompatActivity {
 //                GoToActivityUtil.goToActivity(this, Game2048Activity.class);
 //                break;
             case R.id.button_weibo:
-                GoToActivityUtil.goToActivity(this, WeiBoActivity.class);
+                GoToActivityUtil.goToActivity(this, TwitterActivity.class);
                 break;
             default:
                 break;

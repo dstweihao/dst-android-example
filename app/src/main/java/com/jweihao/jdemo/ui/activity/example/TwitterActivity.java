@@ -1,12 +1,14 @@
 package com.jweihao.jdemo.ui.activity.example;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 
 import com.jweihao.jdemo.adapter.MessageAdapter;
 import com.jweihao.jdemo.bean.Data;
+import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.jweihao.jdemo.utils.ImageWatcherUtil;
 import com.jweihao.jdemo.utils.SpaceItemDecorationUtil;
 import com.jweihao.jdemo.view.MessagePicturesLayout;
@@ -26,7 +29,6 @@ import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 import com.wh.customcontrol.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -34,7 +36,12 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import ch.ielse.view.imagewatcher.ImageWatcher;
 
-public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatcher.OnPictureLongPressListener, MessagePicturesLayout.Callback {
+
+        /*  Author: LuckSiege
+        *   GitHub: https://github.com/LuckSiege/PictureSelector
+        * */
+
+public class TwitterActivity extends AppCompatActivity implements ImageWatcher.OnPictureLongPressListener, MessagePicturesLayout.Callback {
 
     @BindView(R.id.headBackButton)
     ImageButton mHeadBackButton;
@@ -44,12 +51,16 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
     RecyclerView mLifeRecycler;
     @BindView(R.id.v_image_watcher)
     ImageWatcher mImageWatcher;
+    @BindView(R.id.weibo_swipefresh)
+    SwipeRefreshLayout mWeiboSwipefresh;
+    @BindView(R.id.fab)
+    FloatingActionButton mFab;
     private boolean isTranslucentStatus = false;
-    private List<Data> mDataList = new ArrayList<>();
     private MessageAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
@@ -60,19 +71,24 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
             isTranslucentStatus = true;
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wei_bo_details);
+        setContentView(R.layout.activity_twitter);
         ButterKnife.bind(this);
         initData();
     }
 
-    @OnClick({R.id.headBackButton, R.id.headShareButton})
+
+    @OnClick({R.id.headBackButton, R.id.headShareButton, R.id.fab})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.headBackButton:
-                WeiBoDetailsActivity.this.finish();
+                TwitterActivity.this.finish();
                 break;
+            //友盟一键分享
             case R.id.headShareButton:
                 break;
+            case R.id.fab:
+//                Toast.makeText(this, "我是发帖按钮", Toast.LENGTH_SHORT).show();
+                GoToActivityUtil.goToActivity(this, SendWeiBoActivity.class);
             default:
                 break;
         }
@@ -80,14 +96,19 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
 
     private void initData() {
 
-        Intent intent = getIntent();
-        Data mData = (Data) intent.getSerializableExtra("Data");
-        mDataList.add(mData);
+        //下拉刷新
+        mWeiboSwipefresh.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorPrimary));
+        mWeiboSwipefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshData();
+            }
+        });
 
         mLifeRecycler.setLayoutManager(new LinearLayoutManager(this));
         mLifeRecycler.addItemDecoration(new SpaceItemDecorationUtil(this).setSpace(14).setSpaceColor(0xFFECECEC));
         mLifeRecycler.setAdapter(adapter = new MessageAdapter(this).setPictureClickCallback(this));
-        adapter.set(mDataList, 2);
+        adapter.set(Data.get(), 1);
 
         // 一般来讲， ImageWatcher 需要占据全屏的位置
         // 如果是透明状态栏，你需要给ImageWatcher标记 一个偏移值，以修正点击ImageView查看的启动动画的Y轴起点的不正确
@@ -122,11 +143,36 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
         ImageWatcherUtil.fitsSystemWindows(isTranslucentStatus, findViewById(R.id.v_fit));
     }
 
+    private void refreshData() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        //请求数据
+                        initData();
+                        //刷新数据
+                        adapter.notifyDataSetChanged();
+                        //关闭刷新状态
+                        mWeiboSwipefresh.setRefreshing(false);
+                    }
+                });
+            }
+        }).start();
+
+    }
+
 
     @Override
     public void onThumbPictureClick(ImageView i, List<ImageView> imageGroupList, List<String> urlList) {
-        mImageWatcher.show(null, i, imageGroupList, urlList);
-
+        mImageWatcher.show(mFab, i, imageGroupList, urlList);
+        mFab.setVisibility(View.GONE);
     }
 
     @Override
@@ -147,4 +193,3 @@ public class WeiBoDetailsActivity extends AppCompatActivity implements ImageWatc
     }
 
 }
-

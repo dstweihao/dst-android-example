@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import com.jweihao.jdemo.ui.activity.example.Game2048Activity;
 import com.jweihao.jdemo.ui.activity.example.JigsawActivity;
-import com.jweihao.jdemo.ui.activity.example.WeiBoActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 
 import com.jweihao.jdemo.bean.Data;
-import com.jweihao.jdemo.ui.activity.example.WeiBoDetailsActivity;
+import com.jweihao.jdemo.ui.activity.example.TwitterDetailsActivity;
 import com.jweihao.jdemo.view.CropCircleTransformation;
 import com.jweihao.jdemo.view.MessagePicturesLayout;
 import com.squareup.picasso.Picasso;
@@ -80,7 +80,7 @@ public class MessageAdapter extends RecyclerView.Adapter {
                 mItemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(v.getContext(), WeiBoDetailsActivity.class);
+                        Intent intent = new Intent(v.getContext(), TwitterDetailsActivity.class);
                         intent.putExtra("Data", mDataList.get(pos));
                         v.getContext().startActivity(intent);
                     }

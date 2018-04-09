@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.jweihao.jdemo.ui.activity.example.WeiBoActivity;
+import com.jweihao.jdemo.ui.activity.example.TwitterActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
@@ -26,6 +26,6 @@ public class SwipeRefreshLayoutActivity extends AppCompatActivity {
 
     @OnClick(R.id.button_swipeRefresh_base)
     public void onViewClicked() {
-        GoToActivityUtil.goToActivity(this, WeiBoActivity.class);
+        GoToActivityUtil.goToActivity(this, TwitterActivity.class);
     }
 }

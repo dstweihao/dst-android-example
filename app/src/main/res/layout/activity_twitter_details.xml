@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.jweihao.jdemo.ui.activity.example.WeiBoActivity">
+    android:layout_height="wrap_content"
+    tools:context="com.jweihao.jdemo.ui.activity.example.TwitterDetailsActivity">
 
 
     <LinearLayout
@@ -40,9 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="新浪微博"
+                android:text="Twitter"
+                android:textStyle="italic"
                 android:textColor="#FFF"
-                android:textSize="18sp" />
+                android:textSize="28sp" />
 
 
             <ImageButton
@@ -60,34 +60,19 @@
 
         </RelativeLayout>
 
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/weibo_swipefresh"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/life_recycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/life_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </android.support.v4.widget.SwipeRefreshLayout>
+            android:layout_height="match_parent" />
     </LinearLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_done" />
 
     <ch.ielse.view.imagewatcher.ImageWatcher
         android:id="@+id/v_image_watcher"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-</FrameLayout>
+
+</RelativeLayout>
 
 
 
