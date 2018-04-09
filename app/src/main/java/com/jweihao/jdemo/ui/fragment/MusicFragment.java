@@ -32,7 +32,7 @@ public class MusicFragment extends Fragment {
         RecyclerView recyclerview = view.findViewById(R.id.recyclerview);
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         //添加Android自带的分割线
-        recyclerview.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
+//        recyclerview.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
         initDate();
         recyclerview.setAdapter(new FragmentAdapter(mDates));
         return view;
@@ -41,7 +41,7 @@ public class MusicFragment extends Fragment {
     private void initDate() {
 
         for (int i = 0; i < 50; i++) {
-            RecyclerData recyclerData = new RecyclerData(R.mipmap.music, "什么爱不说就已经存在，什么爱望着就全都明白，你笑一点一点一滴漾开，一字一句形容不来，是星空上的银海，我后来会在纯白的礼堂，牵好久的手交给另个他，眼泪一点一点一滴流下，感动也会跟着留下，远远看着你们幸福，像前世我们有过的模样。");
+            RecyclerData recyclerData = new RecyclerData(R.mipmap.music, "   什么爱不说就已经存在，什么爱望着就全都明白，你笑一点一点一滴漾开，一字一句形容不来，是星空上的银海，我后来会在纯白的礼堂，牵好久的手交给另个他，眼泪一点一点一滴流下，感动也会跟着留下，远远看着你们幸福，像前世我们有过的模样。");
             mDates.add(recyclerData);
         }
     }

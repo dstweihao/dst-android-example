@@ -32,7 +32,7 @@ public class SportsFargment extends Fragment {
         RecyclerView recyclerview = view.findViewById(R.id.recyclerview);
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         //添加Android自带的分割线
-        recyclerview.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
+//        recyclerview.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
         initDate();
         recyclerview.setAdapter(new FragmentAdapter(mDates));
         return view;
@@ -41,7 +41,7 @@ public class SportsFargment extends Fragment {
     private void initDate() {
 
         for (int i = 0; i < 50; i++) {
-            RecyclerData recyclerData = new RecyclerData(R.mipmap.sports, "北京时间1月14号，莱昂纳德完成对战掘金的比赛后。莱昂纳德进入马刺的队医的观察名单中，无法上场进行比赛。在这段养伤的期间，莱昂纳德拍摄了，祝中国球迷们新年快乐的祝福视频，莱昂纳德是今年第一个给中国球迷拜年的NBA球星。");
+            RecyclerData recyclerData = new RecyclerData(R.mipmap.kl1, "   北京时间1月14号，莱昂纳德完成对战掘金的比赛后。莱昂纳德进入马刺的队医的观察名单中，无法上场进行比赛。在这段养伤的期间，莱昂纳德拍摄了，祝中国球迷们新年快乐的祝福视频，莱昂纳德是今年第一个给中国球迷拜年的NBA球星。");
             mDates.add(recyclerData);
         }
     }

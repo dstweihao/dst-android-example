@@ -9,7 +9,7 @@
         android:id="@+id/toolbar_name"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="#63AC26">
+        android:background="@color/colorPrimary">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,16 +19,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="新闻头条"
+                android:text="KL2"
                 android:textColor="#F2F2F2"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="italic" />
         </RelativeLayout>
 
 
     </android.support.v7.widget.Toolbar>
-
-
     <com.jweihao.jdemo.view.JudgeNestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -45,26 +43,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#CCEED0"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/news" />
+                    android:src="@mipmap/kl2" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/sports" />
+                    android:src="@mipmap/news" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/movie" />
+                    android:src="@mipmap/kl1" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -77,16 +74,16 @@
                 android:id="@+id/tablayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"
-                app:tabIndicatorColor="#63AC26"
-                app:tabSelectedTextColor="#63AC26"
+                app:tabTextColor="@color/title2"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabSelectedTextColor="@color/colorPrimary"
                 app:tabTextAppearance="@style/TabLayoutTextStyle" />
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#63AC26" />
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
     </com.jweihao.jdemo.view.JudgeNestedScrollView>
@@ -98,9 +95,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar_name"
         android:background="#fff"
+        app:tabTextColor="@color/title2"
         android:visibility="gone"
-        app:tabIndicatorColor="#63AC26"
-        app:tabSelectedTextColor="#63AC26"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary"
         app:tabTextAppearance="@style/TabLayoutTextStyle" />
 
 

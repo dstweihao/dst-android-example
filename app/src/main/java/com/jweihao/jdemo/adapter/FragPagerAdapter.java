@@ -16,7 +16,7 @@ import com.jweihao.jdemo.ui.fragment.SportsFargment;
 
 public class FragPagerAdapter extends FragmentPagerAdapter {
 
-    String[] mTitle = new String[]{"新闻","体育","电影","音乐"};
+    String[] mTitle = new String[]{"News","Sports","Movie","Music"};
 
 
     public FragPagerAdapter(FragmentManager fm) {
