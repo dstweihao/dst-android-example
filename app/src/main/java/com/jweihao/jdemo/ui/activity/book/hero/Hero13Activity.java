@@ -29,7 +29,7 @@ public class Hero13Activity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_jigsaw, R.id.button_2048,R.id.button_weibo})
+    @OnClick({R.id.button_jigsaw, R.id.button_2048})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_jigsaw:

@@ -210,13 +210,14 @@
 
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.ServiceBestPracticeActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.layout.CATVRActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.layout.CATVRActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.TwitterActivity"
             android:theme="@style/TabLayoutActivity" />
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.TwitterDetailsActivity"
             android:theme="@style/TabLayoutActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.PayActivity"></activity>
     </application>
 
 </manifest>

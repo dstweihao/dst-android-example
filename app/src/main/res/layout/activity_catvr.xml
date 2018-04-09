@@ -31,6 +31,7 @@
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tablayout"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"

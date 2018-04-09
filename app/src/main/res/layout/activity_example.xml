@@ -7,32 +7,40 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.example.ExampleActivity">
 
-    <!--<Button-->
-        <!--android:layout_margin="@dimen/px_1"-->
-        <!--android:background="@color/white"-->
-        <!--android:textColor="@color/black"-->
-        <!--android:id="@+id/button_jigsaw"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="拼图游戏" />-->
-
-    <!--<Button-->
-        <!--android:layout_margin="@dimen/px_1"-->
-        <!--android:background="@color/white"-->
-        <!--android:textColor="@color/black"-->
-        <!--android:id="@+id/button_2048"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="2048" />-->
-
     <Button
-        android:layout_margin="@dimen/px_1"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:id="@+id/button_weibo"
+        android:id="@+id/button_pay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Android 仿微博发布动态、QQ空间发布说说、微信朋友圈等功能"
-        android:textAllCaps="false" />
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="H5调起微信app和支付宝app进行支付"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_glass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="仿慕课网个人界面的毛玻璃效果"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/button_sling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="实现从浏览器html页面调起xxx项目app"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Android 仿微博发布动态QQ空间发布说说"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 
 </LinearLayout>

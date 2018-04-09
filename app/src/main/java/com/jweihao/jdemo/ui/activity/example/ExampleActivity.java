@@ -15,9 +15,6 @@ import butterknife.OnClick;
 public class ExampleActivity extends AppCompatActivity {
 
 
-    @BindView(R.id.button_weibo)
-    Button mButtonWeibo;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,21 +22,22 @@ public class ExampleActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_weibo})
+
+    @OnClick({R.id.button_pay, R.id.button_glass, R.id.button_sling, R.id.button_twitter})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-//            case R.id.button_jigsaw:
-//                GoToActivityUtil.goToActivity(this, JigsawActivity.class);
-//                break;
-//            case R.id.button_2048:
-//                GoToActivityUtil.goToActivity(this, Game2048Activity.class);
-//                break;
-            case R.id.button_weibo:
+            case R.id.button_pay:
+                GoToActivityUtil.goToActivity(this, PayActivity.class);
+                break;
+            case R.id.button_glass:
+                break;
+            case R.id.button_sling:
+                break;
+            case R.id.button_twitter:
                 GoToActivityUtil.goToActivity(this, TwitterActivity.class);
                 break;
             default:
                 break;
         }
     }
-
 }
