@@ -215,7 +215,8 @@
             android:exported="true" />
 
         <activity android:name="com.jweihao.jdemo.ui.activity.book.diyihang.ServiceBestPracticeActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity"/>
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.layout.CATVRActivity"></activity>
     </application>
 
 </manifest>

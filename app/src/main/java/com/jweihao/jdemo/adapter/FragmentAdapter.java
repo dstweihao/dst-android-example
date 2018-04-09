@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jweihao.jdemo.bean.RecyclerData;
 import com.wh.customcontrol.R;
@@ -30,9 +31,11 @@ public class FragmentAdapter extends RecyclerView.Adapter<FragmentAdapter.ViewHo
 
         private final ImageView mImage;
         private final TextView mTextview;
+        private final View mItemView;
 
         public ViewHolder(View itemView) {
             super(itemView);
+            mItemView = itemView;
             mImage = itemView.findViewById(R.id.imageview);
             mTextview = itemView.findViewById(R.id.textview);
 
@@ -50,10 +53,16 @@ public class FragmentAdapter extends RecyclerView.Adapter<FragmentAdapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         RecyclerData recyclerData = mDates.get(position);
         holder.mImage.setImageResource(recyclerData.getImage());
         holder.mTextview.setText(recyclerData.getName());
+        holder.mItemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "这是第 " + position + " 条item", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

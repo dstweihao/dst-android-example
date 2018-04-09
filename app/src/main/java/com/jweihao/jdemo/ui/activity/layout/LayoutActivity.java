@@ -30,6 +30,7 @@ public class LayoutActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_catvr:
+                GoToActivityUtil.goToActivity(this, CATVRActivity.class);
                 break;
             case R.id.button_ntvr:
                 GoToActivityUtil.goToActivity(this, NTVRActivity.class);
