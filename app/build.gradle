@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -67,10 +68,9 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-
+    //毛玻璃
+//    implementation'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
 }
-repositories {
-    mavenCentral()
-}
 
-apply plugin: 'kotlin-android-extensions'
+

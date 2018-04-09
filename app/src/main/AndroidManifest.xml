@@ -217,7 +217,8 @@
         <activity
             android:name="com.jweihao.jdemo.ui.activity.example.TwitterDetailsActivity"
             android:theme="@style/TabLayoutActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.PayActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.PayActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.GlassActivity"></activity>
     </application>
 
 </manifest>

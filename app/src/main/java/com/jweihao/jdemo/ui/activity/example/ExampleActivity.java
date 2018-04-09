@@ -30,6 +30,7 @@ public class ExampleActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, PayActivity.class);
                 break;
             case R.id.button_glass:
+                GoToActivityUtil.goToActivity(this, GlassActivity.class);
                 break;
             case R.id.button_sling:
                 break;
