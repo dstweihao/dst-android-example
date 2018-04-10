@@ -6,6 +6,24 @@
     tools:context="com.jweihao.jdemo.ui.activity.example.X5WebViewActivity">
 
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="X5WebView腾讯浏览服务TBS使用示例"
+                android:textColor="#F2F2F2"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
     <ProgressBar
         android:id="@+id/progressBar1"
         style="?android:attr/progressBarStyleHorizontal"

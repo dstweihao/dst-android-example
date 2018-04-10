@@ -44,7 +44,13 @@ public class X5WebViewActivity extends AppCompatActivity {
 
         mWebView = (WebView) findViewById(R.id.tbs_webview);
         webViewSetting();
-        mWebView.loadUrl("http://www.qq.com/");
+     /*   https://v.qq.com/
+     *     http://www.qq.com/
+     *     http://app.html5.qq.com/navi/index
+     *      http://mini.eastday.com/mobile/180410151247195.html  //聚合数据新闻头条
+     * */
+
+        mWebView.loadUrl("http://app.html5.qq.com/navi/index");
         mWebView.setWebViewClient(new WebViewClient() {
 
             @Override
