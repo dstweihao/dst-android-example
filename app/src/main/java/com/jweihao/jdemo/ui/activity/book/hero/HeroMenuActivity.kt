@@ -23,7 +23,7 @@ class HeroMenuActivity : AppCompatActivity() {
         button_hero7.setOnClickListener { startActivity(Intent(this, AnimationActivity::class.java)) }
         button_hero10.setOnClickListener { startActivity(Intent(this, ViewStubActivity::class.java)) }
         button_hero12.setOnClickListener { startActivity(Intent(this, MaterialDesignActivity::class.java)) }
-        button_hero13.setOnClickListener { startActivity(Intent(this, ExampleActivity::class.java)) }
+        button_hero13.setOnClickListener { startActivity(Intent(this, Hero13Activity::class.java)) }
 
     }
 

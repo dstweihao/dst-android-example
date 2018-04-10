@@ -76,5 +76,15 @@
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
+    <Button
+        android:id="@+id/button_x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="X5WebView腾讯浏览服务TBS使用示例"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
 
 </LinearLayout>

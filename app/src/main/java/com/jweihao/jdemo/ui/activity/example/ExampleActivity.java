@@ -20,7 +20,7 @@ public class ExampleActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button_twitter, R.id.button_pay, R.id.button_glass, R.id.button_html, R.id.button_sling})
+    @OnClick({R.id.button_twitter, R.id.button_pay, R.id.button_glass, R.id.button_html, R.id.button_sling, R.id.button_x5})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_twitter:
@@ -38,8 +38,15 @@ public class ExampleActivity extends AppCompatActivity {
             case R.id.button_sling:
                 GoToActivityUtil.goToActivity(this, SlingActivity.class);
                 break;
+            case R.id.button_x5:
+                GoToActivityUtil.goToActivity(this, X5WebViewActivity.class);
+                break;
             default:
                 break;
         }
+    }
+
+    @OnClick(R.id.button_x5)
+    public void onViewClicked() {
     }
 }
