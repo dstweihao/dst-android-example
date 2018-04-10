@@ -91,7 +91,9 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="eefd86202411dc1c5ad240a7d7153936" />
+
         <service android:name="com.amap.api.location.APSService" />
+
         <activity
             android:name="com.jweihao.jdemo.ui.activity.MainActivity"
             android:theme="@style/NoTitleActivity">
@@ -243,7 +245,8 @@
             android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.PayActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.example.GlassActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.example.HTMLActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.HTMLActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.example.SlingActivity"></activity>
     </application>
 
 </manifest>

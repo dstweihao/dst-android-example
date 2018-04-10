@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="实现从浏览器HTML页面调起xxx项目App"
+        android:text="实现从浏览器HTML页面调起KL2项目App"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 

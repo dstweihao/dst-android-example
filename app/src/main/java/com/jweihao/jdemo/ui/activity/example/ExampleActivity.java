@@ -36,6 +36,7 @@ public class ExampleActivity extends AppCompatActivity {
                 GoToActivityUtil.goToActivity(this, HTMLActivity.class);
                 break;
             case R.id.button_sling:
+                GoToActivityUtil.goToActivity(this, SlingActivity.class);
                 break;
             default:
                 break;
