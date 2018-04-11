@@ -8,7 +8,7 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="27" />
 
-    <!--腾讯浏览服务TBS-->
+    <!-- 腾讯浏览服务TBS -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -232,6 +232,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.Hero13Activity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.java.JavaThreadActivity"></activity>
     </application>
 
 </manifest>

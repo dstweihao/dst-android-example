@@ -5,12 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.jweihao.jdemo.ui.activity.animation.AnimationActivity;
-import com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity;
-import com.jweihao.jdemo.ui.activity.canvas.CanvasActivity;
-import com.jweihao.jdemo.ui.activity.book.hero.custom.CustomActivity;
 import com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity;
+import com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity;
 import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
+import com.jweihao.jdemo.ui.activity.java.JavaThreadActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
 import com.jweihao.jdemo.ui.activity.md.MaterialDesignActivity;
 import com.jweihao.jdemo.ui.activity.property.ViewStubActivity;
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.button_diyihang, R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
             R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas, R.id.button_hero, R.id.button_art,
-            R.id.button_sdk
+            R.id.button_sdk, R.id.button_thread
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -69,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             //《Android开发艺术探索》
             case R.id.button_art:
+                break;
+            //《Java多线程编程核心技术》
+            case R.id.button_thread:
+                GoToActivityUtil.goToActivity(this, JavaThreadActivity.class);
                 break;
             case R.id.button_custom:
 //                GoToActivityUtil.goToActivity(this, .class);
@@ -102,5 +104,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+    }
+
+    @OnClick(R.id.button_thread)
+    public void onViewClicked() {
     }
 }

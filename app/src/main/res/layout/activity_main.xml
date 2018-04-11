@@ -61,6 +61,16 @@
             android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/button_thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_1"
+            android:background="@color/white"
+            android:text="《Java多线程编程核心技术》"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
 
             android:id="@+id/button_custom"
             android:layout_width="match_parent"
