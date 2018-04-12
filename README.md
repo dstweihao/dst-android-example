@@ -1,5 +1,5 @@
 # KL2
-__KL2是一个Demo集合，其中收集了基于Android学习路线的Android书籍里面的Demo，还收集了工作和学习过程中收集到的一些其他的Demo。__
+KL2是一个Demo集合，其中收集了基于Android学习路线的Android书籍里面的Demo，还收集了工作和学习过程中收集到的一些其他的Demo。
  * __Android学习路线，主要基于Android书籍__
     * 《第一行代码》
     * 《Android群英传》
@@ -25,9 +25,9 @@ __KL2是一个Demo集合，其中收集了基于Android学习路线的Android书
     * X5WebView腾讯浏览服务TBS使用示例
  * __APK演示效果：__[点击下载](https://raw.githubusercontent.com/jweihao/KL2/master/apk/kl2-debug.apk)
  * __部分截图__<br><br>
+![](https://github.com/jweihao/KL2/blob/master/imgs/KL0.png)
 ![](https://github.com/jweihao/KL2/blob/master/imgs/KL1.png)
 ![](https://github.com/jweihao/KL2/blob/master/imgs/KL2.png)
-![](https://github.com/jweihao/KL2/blob/master/imgs/kl3.png)
-![](https://github.com/jweihao/KL2/blob/master/imgs/kl6.png)
-![](https://github.com/jweihao/KL2/blob/master/imgs/kl7.png)
-![](https://github.com/jweihao/KL2/blob/master/imgs/kl8.png)
+![](https://github.com/jweihao/KL2/blob/master/imgs/KL6.png)
+![](https://github.com/jweihao/KL2/blob/master/imgs/KL7.png)
+![](https://github.com/jweihao/KL2/blob/master/imgs/KL8.png)
