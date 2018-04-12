@@ -23,7 +23,7 @@ KL2是一个Demo集合，其中收集了基于Android学习路线的Android书�
     * Android与HTML+JS交互入门
     * 实现从浏览器HTML页面调起KL2项目App
     * X5WebView腾讯浏览服务TBS使用示例
- * __APK演示效果：__[点击下载](https://fir.im/KL2)
+ * __APK演示效果：__[点击下载](https://fir.im/kl2)
  * __部分截图__<br><br>
 ![](https://github.com/jweihao/KL2/blob/master/imgs/KL0.png)
 ![](https://github.com/jweihao/KL2/blob/master/imgs/KL1.png)
