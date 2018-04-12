@@ -1,7 +1,7 @@
 # KL2
 KL2是一个Demo集合，其中收集了基于Android学习路线的Android书籍里面的Demo，还收集了工作和学习过程中收集到的一些其他的Demo。
- * __Android学习路线，主要基于Android书籍__
-    * 《第一行代码》
+ * __Android学习路线，主要基于Android书籍。__ 这里主要是进行对书中源码的整合，只有经过自己敲过一遍，印象才会深刻。
+    * 《第一行代码》
     * 《Android群英传》
     * 《Android开发艺术探索》
     * 《Android源码设计模式解析与实战》
