@@ -3,10 +3,9 @@ package com.jweihao.jdemo.ui.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
-import com.jweihao.jdemo.ui.activity.book.diyihang.DiYiHangActivity;
-import com.jweihao.jdemo.ui.activity.book.hero.HeroMenuActivity;
+import com.jweihao.jdemo.ui.activity.book.AndroidMenuActivity;
+import com.jweihao.jdemo.ui.activity.book.JavaMenuActivity;
 import com.jweihao.jdemo.ui.activity.example.ExampleActivity;
 import com.jweihao.jdemo.ui.activity.java.JavaThreadActivity;
 import com.jweihao.jdemo.ui.activity.layout.LayoutActivity;
@@ -16,31 +15,10 @@ import com.jweihao.jdemo.ui.activity.sdk.SDKActivity;
 import com.jweihao.jdemo.utils.GoToActivityUtil;
 import com.wh.customcontrol.R;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-
-
-    @BindView(R.id.button_custom)
-    Button mButtonCustom;
-    @BindView(R.id.button_http)
-    Button mButtonHttp;
-    @BindView(R.id.button_layout)
-    Button mButtonLayout;
-    @BindView(R.id.button_animation)
-    Button mButtonAnimation;
-    @BindView(R.id.button_md)
-    Button mButtonMd;
-    @BindView(R.id.button_example)
-    Button mButtonExample;
-    @BindView(R.id.button_property)
-    Button mButtonProperty;
-    @BindView(R.id.button_canvas)
-    Button mButtonCanvas;
-    @BindView(R.id.button_sdk)
-    Button mButtonSdk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,29 +29,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button_diyihang, R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
-            R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas, R.id.button_hero, R.id.button_art,
-            R.id.button_sdk, R.id.button_thread
+    @OnClick({R.id.button_custom, R.id.button_http, R.id.button_layout, R.id.button_animation,
+            R.id.button_md, R.id.button_property, R.id.button_example, R.id.button_canvas,
+            R.id.button_sdk,  R.id.button_android, R.id.button_java
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            //《第一行代码》
-            case R.id.button_diyihang:
-                GoToActivityUtil.goToActivity(this, DiYiHangActivity.class);
+            // Android书籍目录
+            case R.id.button_android:
+                GoToActivityUtil.goToActivity(this, AndroidMenuActivity.class);
                 break;
-            //《Android群英传》
-            case R.id.button_hero:
-                GoToActivityUtil.goToActivity(this, HeroMenuActivity.class);
-                break;
-            //《Android开发艺术探索》
-            case R.id.button_art:
-                break;
-            //《Java多线程编程核心技术》
-            case R.id.button_thread:
-                GoToActivityUtil.goToActivity(this, JavaThreadActivity.class);
+            // Java书籍目录
+            case R.id.button_java:
+                GoToActivityUtil.goToActivity(this, JavaMenuActivity.class);
                 break;
             case R.id.button_custom:
-//                GoToActivityUtil.goToActivity(this, .class);
+
                 break;
             case R.id.button_http:
                 break;
@@ -106,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @OnClick(R.id.button_thread)
+    @OnClick(R.id.button_java)
     public void onViewClicked() {
     }
 }

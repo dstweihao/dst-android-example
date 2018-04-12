@@ -4,8 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.Zhang6Activity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="第6章 详解持久化技术"
+            android:textColor="#F2F2F2"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.SPActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SharedPreferences存储"
+            android:textColor="#F2F2F2"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/sp_ll"
@@ -72,10 +87,12 @@
         </LinearLayout>
 
         <Button
+            android:background="@color/white"
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:textColor="@color/black"
             android:textAllCaps="false" />
 
     </LinearLayout>
@@ -85,7 +102,7 @@
         android:id="@+id/save_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sp_ll"
+
         android:layout_margin="@dimen/px_1"
         android:layout_marginTop="@dimen/dp_5"
         android:background="@color/white"
@@ -97,7 +114,6 @@
         android:id="@+id/restore_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/save_data"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
         android:text="Restore_data"
@@ -108,7 +124,6 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/restore_data"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/dp_10"
         android:orientation="vertical">
@@ -121,9 +136,7 @@
             android:layout_marginLeft="20dp"
             android:textColor="@color/black"
             android:textSize="15dp" />
-
         <TextView
-
             android:id="@+id/sp_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,4 +155,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

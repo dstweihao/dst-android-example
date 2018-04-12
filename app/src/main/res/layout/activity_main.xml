@@ -32,43 +32,25 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button_diyihang"
+            android:id="@+id/button_android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/px_1"
             android:background="@color/white"
-            android:text="《第一行代码》"
+            android:text="Android书籍"
+            android:textAllCaps="false"
             android:textColor="@color/black" />
-
         <Button
-            android:id="@+id/button_hero"
+            android:id="@+id/button_java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/px_1"
             android:background="@color/white"
-            android:text="《Android群英传》"
+            android:text="Java书籍"
             android:textAllCaps="false"
             android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/button_art"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/px_1"
-            android:background="@color/white"
-            android:text="《Android开发艺术探索》"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/button_thread"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/px_1"
-            android:background="@color/white"
-            android:text="《Java多线程编程核心技术》"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
 
         <Button
 

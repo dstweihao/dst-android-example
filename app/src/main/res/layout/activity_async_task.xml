@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.AsyncTaskActivity">
 
+    <RelativeLayout
+        android:id="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="使用AsyncTask"
+            android:textColor="#F2F2F2"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/tv_async"
         android:layout_width="wrap_content"

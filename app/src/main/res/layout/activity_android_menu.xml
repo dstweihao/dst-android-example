@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.UpdateUIActivity">
-
-    <!--在子线程中更新UI-->
-
-
+    tools:context="com.jweihao.jdemo.ui.activity.book.AndroidMenuActivity">
     <RelativeLayout
-        android:id="@+id/title_toolbar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@color/colorPrimary">
@@ -19,30 +14,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="在子线程中更新UI"
+            android:text="Android书籍"
             android:textColor="#F2F2F2"
             android:textSize="20dp" />
     </RelativeLayout>
 
     <Button
-        android:layout_below="@+id/title_toolbar"
-        android:id="@+id/Change_text"
+        android:id="@+id/button_diyihang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/px_1"
         android:background="@color/white"
-        android:text="Change Text"
+        android:text="《第一行代码》"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="《Android群英传》"
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button_art"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="italic" />
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="《Android开发艺术探索》"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -232,7 +232,9 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/NoTitleActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.Hero13Activity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.java.JavaThreadActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.java.JavaThreadActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.AndroidMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.JavaMenuActivity"></activity>
     </application>
 
 </manifest>

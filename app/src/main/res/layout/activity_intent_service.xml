@@ -8,6 +8,20 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.IntentServiceTestActivity">
 
+    <RelativeLayout
+        android:id="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="使用IntentService"
+            android:textColor="#F2F2F2"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
     <Button
         android:id="@+id/start_intent_service"
         android:layout_width="match_parent"

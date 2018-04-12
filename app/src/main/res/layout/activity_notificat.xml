@@ -7,6 +7,20 @@
     android:orientation="vertical"
     tools:context="com.jweihao.jdemo.ui.activity.book.diyihang.NotificatActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Notification"
+            android:textColor="#F2F2F2"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
     <Button
         android:id="@+id/button_send_notice"
         android:layout_width="match_parent"

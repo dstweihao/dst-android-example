@@ -41,6 +41,7 @@ public class Zhang6Activity extends AppCompatActivity {
                 break;
             case R.id.button_sqlite:
                 GoToActivityUtil.goToActivity(this, SQLiteActivity.class);
+                break;
             case R.id.button_litepal:
                 GoToActivityUtil.goToActivity(this, LitePalActivity.class);
                 break;
