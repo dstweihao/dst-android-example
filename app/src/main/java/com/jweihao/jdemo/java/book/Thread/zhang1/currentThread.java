@@ -1,4 +1,4 @@
-package com.jweihao.jdemo.java;
+package com.jweihao.jdemo.java.book.Thread.zhang1;
 
 /**
  * Created by weihao on 2018/4/11.
