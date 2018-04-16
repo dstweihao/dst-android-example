@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.book.art.ArtMenuActivity">
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="第9章 四大组件的工作过程"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="第10章 Android的消息机制"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="第11章 Android的线程和线程池"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>

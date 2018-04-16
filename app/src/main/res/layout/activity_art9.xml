@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jweihao.jdemo.ui.activity.book.art.Art9Activity">
+
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Service的启动过程"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_1"
+        android:background="@color/white"
+        android:text="Service的绑定过程"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>

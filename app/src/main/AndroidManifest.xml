@@ -234,7 +234,9 @@
         <activity android:name="com.jweihao.jdemo.ui.activity.book.hero.Hero13Activity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.java.JavaThreadActivity" />
         <activity android:name="com.jweihao.jdemo.ui.activity.book.AndroidMenuActivity" />
-        <activity android:name="com.jweihao.jdemo.ui.activity.book.JavaMenuActivity"></activity>
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.JavaMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.art.ArtMenuActivity" />
+        <activity android:name="com.jweihao.jdemo.ui.activity.book.art.Art9Activity"></activity>
     </application>
 
 </manifest>
