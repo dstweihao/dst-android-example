@@ -9,7 +9,7 @@ Learner是一个Demo集合，其中收集了基于Android学习路线的Android�
     * 《Android进阶之光》
     
  * __Weex__
-    * ![Weex学习之HTML基础教程](https://github.com/jweihao/Learner/edit/master/README.md)
+    * !(Weex学习之HTML基础教程)(https://github.com/jweihao/Learner/edit/master/README.md)
  * __Java书籍__
     * 《Java多线程编程核心技术》
  * __网络框架__
